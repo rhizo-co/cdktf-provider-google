@@ -1,0 +1,295 @@
+// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/network_security_address_groups
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DataGoogleNetworkSecurityAddressGroupsConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/network_security_address_groups#id DataGoogleNetworkSecurityAddressGroups#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/network_security_address_groups#location DataGoogleNetworkSecurityAddressGroups#location}
+  */
+  readonly location: string;
+  /**
+  * The parent of the Address Group. Use "organizations/{organization_id}" for organization-level address groups or "projects/{project_id}" for project-level address groups.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/network_security_address_groups#parent DataGoogleNetworkSecurityAddressGroups#parent}
+  */
+  readonly parent?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/network_security_address_groups#project DataGoogleNetworkSecurityAddressGroups#project}
+  */
+  readonly project?: string;
+}
+export interface DataGoogleNetworkSecurityAddressGroupsAddressGroups {
+}
+
+export function dataGoogleNetworkSecurityAddressGroupsAddressGroupsToTerraform(struct?: DataGoogleNetworkSecurityAddressGroupsAddressGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleNetworkSecurityAddressGroupsAddressGroupsToHclTerraform(struct?: DataGoogleNetworkSecurityAddressGroupsAddressGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleNetworkSecurityAddressGroupsAddressGroupsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleNetworkSecurityAddressGroupsAddressGroups | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleNetworkSecurityAddressGroupsAddressGroups | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // capacity - computed: true, optional: false, required: false
+  public get capacity() {
+    return this.getNumberAttribute('capacity');
+  }
+
+  // items - computed: true, optional: false, required: false
+  public get items() {
+    return this.getListAttribute('items');
+  }
+
+  // location - computed: true, optional: false, required: false
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataGoogleNetworkSecurityAddressGroupsAddressGroupsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleNetworkSecurityAddressGroupsAddressGroupsOutputReference {
+    return new DataGoogleNetworkSecurityAddressGroupsAddressGroupsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/network_security_address_groups google_network_security_address_groups}
+*/
+export class DataGoogleNetworkSecurityAddressGroups extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "google_network_security_address_groups";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataGoogleNetworkSecurityAddressGroups resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataGoogleNetworkSecurityAddressGroups to import
+  * @param importFromId The id of the existing DataGoogleNetworkSecurityAddressGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/network_security_address_groups#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataGoogleNetworkSecurityAddressGroups to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_network_security_address_groups", importId: importFromId, provider });
+      }
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/network_security_address_groups google_network_security_address_groups} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataGoogleNetworkSecurityAddressGroupsConfig
+  */
+  public constructor(scope: Construct, id: string, config: DataGoogleNetworkSecurityAddressGroupsConfig) {
+    super(scope, id, {
+      terraformResourceType: 'google_network_security_address_groups',
+      terraformGeneratorMetadata: {
+        providerName: 'google',
+        providerVersion: '8.3.0',
+        providerVersionConstraint: '~> 8.3.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._id = config.id;
+    this._location = config.location;
+    this._parent = config.parent;
+    this._project = config.project;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // address_groups - computed: true, optional: false, required: false
+  private _addressGroups = new DataGoogleNetworkSecurityAddressGroupsAddressGroupsList(this, "address_groups", false);
+  public get addressGroups() {
+    return this._addressGroups;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // location - computed: false, optional: false, required: true
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+
+  // parent - computed: false, optional: true, required: false
+  private _parent?: string; 
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+  public set parent(value: string) {
+    this._parent = value;
+  }
+  public resetParent() {
+    this._parent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentInput() {
+    return this._parent;
+  }
+
+  // project - computed: true, optional: true, required: false
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  public resetProject() {
+    this._project = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      id: cdktf.stringToTerraform(this._id),
+      location: cdktf.stringToTerraform(this._location),
+      parent: cdktf.stringToTerraform(this._parent),
+      project: cdktf.stringToTerraform(this._project),
+    };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent: {
+        value: cdktf.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
+}
