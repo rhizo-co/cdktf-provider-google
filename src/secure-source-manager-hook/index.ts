@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,30 +16,30 @@ export interface SecureSourceManagerHookConfig extends cdktf.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#deletion_policy SecureSourceManagerHook#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#deletion_policy SecureSourceManagerHook#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Determines if the hook disabled or not.
   * Set to true to stop sending traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#disabled SecureSourceManagerHook#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#disabled SecureSourceManagerHook#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * The events that trigger hook on. Possible values: ["PUSH", "PULL_REQUEST", "PULL_REQUEST_COMMENT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#events SecureSourceManagerHook#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#events SecureSourceManagerHook#events}
   */
   readonly events?: string[];
   /**
   * The ID for the Hook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#hook_id SecureSourceManagerHook#hook_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#hook_id SecureSourceManagerHook#hook_id}
   */
   readonly hookId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#id SecureSourceManagerHook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#id SecureSourceManagerHook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -48,41 +48,41 @@ export interface SecureSourceManagerHookConfig extends cdktf.TerraformMetaArgume
   /**
   * The location for the Repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#location SecureSourceManagerHook#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#location SecureSourceManagerHook#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#project SecureSourceManagerHook#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#project SecureSourceManagerHook#project}
   */
   readonly project?: string;
   /**
   * The ID for the Repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#repository_id SecureSourceManagerHook#repository_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#repository_id SecureSourceManagerHook#repository_id}
   */
   readonly repositoryId: string;
   /**
   * The sensitive query string to be appended to the target URI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#sensitive_query_string SecureSourceManagerHook#sensitive_query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#sensitive_query_string SecureSourceManagerHook#sensitive_query_string}
   */
   readonly sensitiveQueryString?: string;
   /**
   * The target URI to which the payloads will be delivered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#target_uri SecureSourceManagerHook#target_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#target_uri SecureSourceManagerHook#target_uri}
   */
   readonly targetUri: string;
   /**
   * push_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#push_option SecureSourceManagerHook#push_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#push_option SecureSourceManagerHook#push_option}
   */
   readonly pushOption?: SecureSourceManagerHookPushOption;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#timeouts SecureSourceManagerHook#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#timeouts SecureSourceManagerHook#timeouts}
   */
   readonly timeouts?: SecureSourceManagerHookTimeouts;
 }
@@ -93,7 +93,7 @@ export interface SecureSourceManagerHookPushOption {
   * reported. Examples: main, {main,release*}.
   * See https://pkg.go.dev/github.com/gobwas/glob documentation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#branch_filter SecureSourceManagerHook#branch_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#branch_filter SecureSourceManagerHook#branch_filter}
   */
   readonly branchFilter?: string;
 }
@@ -177,15 +177,15 @@ export class SecureSourceManagerHookPushOptionOutputReference extends cdktf.Comp
 }
 export interface SecureSourceManagerHookTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#create SecureSourceManagerHook#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#create SecureSourceManagerHook#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#delete SecureSourceManagerHook#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#delete SecureSourceManagerHook#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#update SecureSourceManagerHook#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#update SecureSourceManagerHook#update}
   */
   readonly update?: string;
 }
@@ -337,7 +337,7 @@ export class SecureSourceManagerHookTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook google_secure_source_manager_hook}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook google_secure_source_manager_hook}
 */
 export class SecureSourceManagerHook extends cdktf.TerraformResource {
 
@@ -353,7 +353,7 @@ export class SecureSourceManagerHook extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SecureSourceManagerHook resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecureSourceManagerHook to import
-  * @param importFromId The id of the existing SecureSourceManagerHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecureSourceManagerHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecureSourceManagerHook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -365,7 +365,7 @@ export class SecureSourceManagerHook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/secure_source_manager_hook google_secure_source_manager_hook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_hook google_secure_source_manager_hook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -376,8 +376,8 @@ export class SecureSourceManagerHook extends cdktf.TerraformResource {
       terraformResourceType: 'google_secure_source_manager_hook',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

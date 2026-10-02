@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface ComputePreviewFeatureConfig extends cdktf.TerraformMetaArgument
   /**
   * The activation status of the preview feature. Possible values: ["ENABLED", "ACTIVATION_STATE_UNSPECIFIED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature#activation_status ComputePreviewFeature#activation_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#activation_status ComputePreviewFeature#activation_status}
   */
   readonly activationStatus: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature#id ComputePreviewFeature#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#id ComputePreviewFeature#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,23 +23,23 @@ export interface ComputePreviewFeatureConfig extends cdktf.TerraformMetaArgument
   /**
   * The name of the preview feature.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature#name ComputePreviewFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#name ComputePreviewFeature#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature#project ComputePreviewFeature#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#project ComputePreviewFeature#project}
   */
   readonly project?: string;
   /**
   * rollout_operation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature#rollout_operation ComputePreviewFeature#rollout_operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#rollout_operation ComputePreviewFeature#rollout_operation}
   */
   readonly rolloutOperation?: ComputePreviewFeatureRolloutOperation;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature#timeouts ComputePreviewFeature#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#timeouts ComputePreviewFeature#timeouts}
   */
   readonly timeouts?: ComputePreviewFeatureTimeouts;
 }
@@ -47,7 +47,7 @@ export interface ComputePreviewFeatureRolloutOperationRolloutInput {
   /**
   * Predefined rollout plans. Possible values: ["ROLLOUT_PLAN_FAST_ROLLOUT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature#predefined_rollout_plan ComputePreviewFeature#predefined_rollout_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#predefined_rollout_plan ComputePreviewFeature#predefined_rollout_plan}
   */
   readonly predefinedRolloutPlan: string;
 }
@@ -130,7 +130,7 @@ export interface ComputePreviewFeatureRolloutOperation {
   /**
   * rollout_input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature#rollout_input ComputePreviewFeature#rollout_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#rollout_input ComputePreviewFeature#rollout_input}
   */
   readonly rolloutInput?: ComputePreviewFeatureRolloutOperationRolloutInput;
 }
@@ -214,15 +214,15 @@ export class ComputePreviewFeatureRolloutOperationOutputReference extends cdktf.
 }
 export interface ComputePreviewFeatureTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature#create ComputePreviewFeature#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#create ComputePreviewFeature#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature#delete ComputePreviewFeature#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#delete ComputePreviewFeature#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature#update ComputePreviewFeature#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#update ComputePreviewFeature#update}
   */
   readonly update?: string;
 }
@@ -374,7 +374,7 @@ export class ComputePreviewFeatureTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature google_compute_preview_feature}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature google_compute_preview_feature}
 */
 export class ComputePreviewFeature extends cdktf.TerraformResource {
 
@@ -390,7 +390,7 @@ export class ComputePreviewFeature extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ComputePreviewFeature resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputePreviewFeature to import
-  * @param importFromId The id of the existing ComputePreviewFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputePreviewFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputePreviewFeature to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -402,7 +402,7 @@ export class ComputePreviewFeature extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_preview_feature google_compute_preview_feature} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature google_compute_preview_feature} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -413,8 +413,8 @@ export class ComputePreviewFeature extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_preview_feature',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

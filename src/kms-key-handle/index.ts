@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/kms_key_handle
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_handle
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface KmsKeyHandleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/kms_key_handle#id KmsKeyHandle#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_handle#id KmsKeyHandle#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -18,40 +18,40 @@ export interface KmsKeyHandleConfig extends cdktf.TerraformMetaArguments {
   * The location for the KeyHandle.
   * A full list of valid locations can be found by running 'gcloud kms locations list'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/kms_key_handle#location KmsKeyHandle#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_handle#location KmsKeyHandle#location}
   */
   readonly location: string;
   /**
   * The resource name for the KeyHandle.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/kms_key_handle#name KmsKeyHandle#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_handle#name KmsKeyHandle#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/kms_key_handle#project KmsKeyHandle#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_handle#project KmsKeyHandle#project}
   */
   readonly project?: string;
   /**
   * Selector of the resource type where we want to protect resources.
   * For example, 'storage.googleapis.com/Bucket'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/kms_key_handle#resource_type_selector KmsKeyHandle#resource_type_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_handle#resource_type_selector KmsKeyHandle#resource_type_selector}
   */
   readonly resourceTypeSelector: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/kms_key_handle#timeouts KmsKeyHandle#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_handle#timeouts KmsKeyHandle#timeouts}
   */
   readonly timeouts?: KmsKeyHandleTimeouts;
 }
 export interface KmsKeyHandleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/kms_key_handle#create KmsKeyHandle#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_handle#create KmsKeyHandle#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/kms_key_handle#delete KmsKeyHandle#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_handle#delete KmsKeyHandle#delete}
   */
   readonly delete?: string;
 }
@@ -174,7 +174,7 @@ export class KmsKeyHandleTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/kms_key_handle google_kms_key_handle}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_handle google_kms_key_handle}
 */
 export class KmsKeyHandle extends cdktf.TerraformResource {
 
@@ -190,7 +190,7 @@ export class KmsKeyHandle extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KmsKeyHandle resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmsKeyHandle to import
-  * @param importFromId The id of the existing KmsKeyHandle that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/kms_key_handle#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KmsKeyHandle that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_handle#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmsKeyHandle to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -202,7 +202,7 @@ export class KmsKeyHandle extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/kms_key_handle google_kms_key_handle} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_handle google_kms_key_handle} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -213,8 +213,8 @@ export class KmsKeyHandle extends cdktf.TerraformResource {
       terraformResourceType: 'google_kms_key_handle',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

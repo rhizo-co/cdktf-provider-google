@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -12,20 +12,20 @@ export interface CesAgentConfig extends cdktf.TerraformMetaArguments {
   * the agent's resource name. If not provided, a unique ID will be
   * automatically assigned for the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#agent_id CesAgent#agent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#agent_id CesAgent#agent_id}
   */
   readonly agentId?: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#app CesAgent#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#app CesAgent#app}
   */
   readonly app: string;
   /**
   * List of child agents in the agent tree.
   * Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#child_agents CesAgent#child_agents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#child_agents CesAgent#child_agents}
   */
   readonly childAgents?: string[];
   /**
@@ -37,19 +37,19 @@ export interface CesAgentConfig extends cdktf.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#deletion_policy CesAgent#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#deletion_policy CesAgent#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Human-readable description of the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Display name of the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#display_name CesAgent#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#display_name CesAgent#display_name}
   */
   readonly displayName: string;
   /**
@@ -57,11 +57,11 @@ export interface CesAgentConfig extends cdktf.TerraformMetaArguments {
   * Format:
   * 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#guardrails CesAgent#guardrails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#guardrails CesAgent#guardrails}
   */
   readonly guardrails?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#id CesAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#id CesAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -70,117 +70,111 @@ export interface CesAgentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Instructions for the LLM model to guide the agent's behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#instruction CesAgent#instruction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#instruction CesAgent#instruction}
   */
   readonly instruction?: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#location CesAgent#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#location CesAgent#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#project CesAgent#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#project CesAgent#project}
   */
   readonly project?: string;
   /**
   * List of available tools for the agent.
   * Format: 'projects/{project}/locations/{location}/apps/{app}/tools/{tool}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#tools CesAgent#tools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#tools CesAgent#tools}
   */
   readonly tools?: string[];
   /**
   * after_agent_callbacks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#after_agent_callbacks CesAgent#after_agent_callbacks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#after_agent_callbacks CesAgent#after_agent_callbacks}
   */
   readonly afterAgentCallbacks?: CesAgentAfterAgentCallbacks[] | cdktf.IResolvable;
   /**
   * after_model_callbacks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#after_model_callbacks CesAgent#after_model_callbacks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#after_model_callbacks CesAgent#after_model_callbacks}
   */
   readonly afterModelCallbacks?: CesAgentAfterModelCallbacks[] | cdktf.IResolvable;
   /**
   * after_tool_callbacks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#after_tool_callbacks CesAgent#after_tool_callbacks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#after_tool_callbacks CesAgent#after_tool_callbacks}
   */
   readonly afterToolCallbacks?: CesAgentAfterToolCallbacks[] | cdktf.IResolvable;
   /**
   * before_agent_callbacks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#before_agent_callbacks CesAgent#before_agent_callbacks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#before_agent_callbacks CesAgent#before_agent_callbacks}
   */
   readonly beforeAgentCallbacks?: CesAgentBeforeAgentCallbacks[] | cdktf.IResolvable;
   /**
   * before_model_callbacks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#before_model_callbacks CesAgent#before_model_callbacks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#before_model_callbacks CesAgent#before_model_callbacks}
   */
   readonly beforeModelCallbacks?: CesAgentBeforeModelCallbacks[] | cdktf.IResolvable;
   /**
   * before_tool_callbacks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#before_tool_callbacks CesAgent#before_tool_callbacks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#before_tool_callbacks CesAgent#before_tool_callbacks}
   */
   readonly beforeToolCallbacks?: CesAgentBeforeToolCallbacks[] | cdktf.IResolvable;
   /**
   * llm_agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#llm_agent CesAgent#llm_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#llm_agent CesAgent#llm_agent}
   */
   readonly llmAgent?: CesAgentLlmAgent;
   /**
   * model_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#model_settings CesAgent#model_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#model_settings CesAgent#model_settings}
   */
   readonly modelSettings?: CesAgentModelSettings;
   /**
   * remote_dialogflow_agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#remote_dialogflow_agent CesAgent#remote_dialogflow_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#remote_dialogflow_agent CesAgent#remote_dialogflow_agent}
   */
   readonly remoteDialogflowAgent?: CesAgentRemoteDialogflowAgent;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#timeouts CesAgent#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#timeouts CesAgent#timeouts}
   */
   readonly timeouts?: CesAgentTimeouts;
   /**
   * toolsets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#toolsets CesAgent#toolsets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#toolsets CesAgent#toolsets}
   */
   readonly toolsets?: CesAgentToolsets[] | cdktf.IResolvable;
-  /**
-  * transfer_rules block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#transfer_rules CesAgent#transfer_rules}
-  */
-  readonly transferRules?: CesAgentTransferRules[] | cdktf.IResolvable;
 }
 export interface CesAgentAfterAgentCallbacks {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#disabled CesAgent#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#python_code CesAgent#python_code}
   */
   readonly pythonCode: string;
 }
@@ -353,20 +347,20 @@ export interface CesAgentAfterModelCallbacks {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#disabled CesAgent#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#python_code CesAgent#python_code}
   */
   readonly pythonCode: string;
 }
@@ -539,20 +533,20 @@ export interface CesAgentAfterToolCallbacks {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#disabled CesAgent#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#python_code CesAgent#python_code}
   */
   readonly pythonCode: string;
 }
@@ -725,20 +719,20 @@ export interface CesAgentBeforeAgentCallbacks {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#disabled CesAgent#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#python_code CesAgent#python_code}
   */
   readonly pythonCode: string;
 }
@@ -911,20 +905,20 @@ export interface CesAgentBeforeModelCallbacks {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#disabled CesAgent#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#python_code CesAgent#python_code}
   */
   readonly pythonCode: string;
 }
@@ -1097,20 +1091,20 @@ export interface CesAgentBeforeToolCallbacks {
   /**
   * Human-readable description of the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#description CesAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#description CesAgent#description}
   */
   readonly description?: string;
   /**
   * Whether the callback is disabled. Disabled callbacks are ignored by the
   * agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#disabled CesAgent#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * The python code to execute for the callback.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#python_code CesAgent#python_code}
   */
   readonly pythonCode: string;
 }
@@ -1333,7 +1327,7 @@ export interface CesAgentModelSettings {
   * The LLM model that the agent should use.
   * If not set, the agent will inherit the model from its parent agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#model CesAgent#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#model CesAgent#model}
   */
   readonly model?: string;
   /**
@@ -1342,7 +1336,7 @@ export interface CesAgentModelSettings {
   * produce responses that are more predictable. Higher temperatures produce
   * responses that are more creative.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#temperature CesAgent#temperature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#temperature CesAgent#temperature}
   */
   readonly temperature?: number;
 }
@@ -1460,49 +1454,41 @@ export interface CesAgentRemoteDialogflowAgent {
   * agent resource name.
   * Format: 'projects/{project}/locations/{location}/agents/{agent}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#agent CesAgent#agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#agent CesAgent#agent}
   */
   readonly agent: string;
   /**
   * The environment ID of the Dialogflow agent be used for the agent
   * execution. If not specified, the draft environment will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#environment_id CesAgent#environment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#environment_id CesAgent#environment_id}
   */
   readonly environmentId?: string;
   /**
   * The flow ID of the flow in the Dialogflow agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#flow_id CesAgent#flow_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#flow_id CesAgent#flow_id}
   */
   readonly flowId: string;
   /**
   * The mapping of the app variables names to the Dialogflow session
   * parameters names to be sent to the Dialogflow agent as input.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#input_variable_mapping CesAgent#input_variable_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#input_variable_mapping CesAgent#input_variable_mapping}
   */
   readonly inputVariableMapping?: { [key: string]: string };
-  /**
-  * The name of the variable that contains the language code to be used for
-  * the Dialogflow session. If unspecified, the default language code of the
-  * Dialogflow agent will be used.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#language_code_variable CesAgent#language_code_variable}
-  */
-  readonly languageCodeVariable?: string;
   /**
   * The mapping of the Dialogflow session parameters names to the app
   * variables names to be sent back to the CES agent after the Dialogflow
   * agent execution ends.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#output_variable_mapping CesAgent#output_variable_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#output_variable_mapping CesAgent#output_variable_mapping}
   */
   readonly outputVariableMapping?: { [key: string]: string };
   /**
   * Indicates whether to respect the message-level interruption settings configured in the Dialogflow agent. * If false: all response messages from the Dialogflow agent follow the app-level barge-in settings. * If true: only response messages with ['allow_playback_interruption'](https://docs.cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3#text) set to true will be interruptable, all other messages follow the app-level barge-in settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#respect_response_interruption_settings CesAgent#respect_response_interruption_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#respect_response_interruption_settings CesAgent#respect_response_interruption_settings}
   */
   readonly respectResponseInterruptionSettings?: boolean | cdktf.IResolvable;
 }
@@ -1517,7 +1503,6 @@ export function cesAgentRemoteDialogflowAgentToTerraform(struct?: CesAgentRemote
     environment_id: cdktf.stringToTerraform(struct!.environmentId),
     flow_id: cdktf.stringToTerraform(struct!.flowId),
     input_variable_mapping: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.inputVariableMapping),
-    language_code_variable: cdktf.stringToTerraform(struct!.languageCodeVariable),
     output_variable_mapping: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.outputVariableMapping),
     respect_response_interruption_settings: cdktf.booleanToTerraform(struct!.respectResponseInterruptionSettings),
   }
@@ -1553,12 +1538,6 @@ export function cesAgentRemoteDialogflowAgentToHclTerraform(struct?: CesAgentRem
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
-    },
-    language_code_variable: {
-      value: cdktf.stringToHclTerraform(struct!.languageCodeVariable),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
     },
     output_variable_mapping: {
       value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.outputVariableMapping),
@@ -1608,10 +1587,6 @@ export class CesAgentRemoteDialogflowAgentOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.inputVariableMapping = this._inputVariableMapping;
     }
-    if (this._languageCodeVariable !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.languageCodeVariable = this._languageCodeVariable;
-    }
     if (this._outputVariableMapping !== undefined) {
       hasAnyValues = true;
       internalValueResult.outputVariableMapping = this._outputVariableMapping;
@@ -1630,7 +1605,6 @@ export class CesAgentRemoteDialogflowAgentOutputReference extends cdktf.ComplexO
       this._environmentId = undefined;
       this._flowId = undefined;
       this._inputVariableMapping = undefined;
-      this._languageCodeVariable = undefined;
       this._outputVariableMapping = undefined;
       this._respectResponseInterruptionSettings = undefined;
     }
@@ -1640,7 +1614,6 @@ export class CesAgentRemoteDialogflowAgentOutputReference extends cdktf.ComplexO
       this._environmentId = value.environmentId;
       this._flowId = value.flowId;
       this._inputVariableMapping = value.inputVariableMapping;
-      this._languageCodeVariable = value.languageCodeVariable;
       this._outputVariableMapping = value.outputVariableMapping;
       this._respectResponseInterruptionSettings = value.respectResponseInterruptionSettings;
     }
@@ -1704,22 +1677,6 @@ export class CesAgentRemoteDialogflowAgentOutputReference extends cdktf.ComplexO
     return this._inputVariableMapping;
   }
 
-  // language_code_variable - computed: false, optional: true, required: false
-  private _languageCodeVariable?: string; 
-  public get languageCodeVariable() {
-    return this.getStringAttribute('language_code_variable');
-  }
-  public set languageCodeVariable(value: string) {
-    this._languageCodeVariable = value;
-  }
-  public resetLanguageCodeVariable() {
-    this._languageCodeVariable = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get languageCodeVariableInput() {
-    return this._languageCodeVariable;
-  }
-
   // output_variable_mapping - computed: false, optional: true, required: false
   private _outputVariableMapping?: { [key: string]: string }; 
   public get outputVariableMapping() {
@@ -1754,15 +1711,15 @@ export class CesAgentRemoteDialogflowAgentOutputReference extends cdktf.ComplexO
 }
 export interface CesAgentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#create CesAgent#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#create CesAgent#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#delete CesAgent#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#delete CesAgent#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#update CesAgent#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#update CesAgent#update}
   */
   readonly update?: string;
 }
@@ -1916,7 +1873,7 @@ export interface CesAgentToolsets {
   /**
   * The tools IDs to filter the toolset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#tool_ids CesAgent#tool_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#tool_ids CesAgent#tool_ids}
   */
   readonly toolIds?: string[];
   /**
@@ -1924,7 +1881,7 @@ export interface CesAgentToolsets {
   * Format:
   * 'projects/{project}/locations/{location}/apps/{app}/toolsets/{toolset}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#toolset CesAgent#toolset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#toolset CesAgent#toolset}
   */
   readonly toolset: string;
 }
@@ -2064,681 +2021,9 @@ export class CesAgentToolsetsList extends cdktf.ComplexList {
     return new CesAgentToolsetsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CesAgentTransferRulesDeterministicTransferExpressionCondition {
-  /**
-  * The string representation of cloud.api.Expression condition.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#expression CesAgent#expression}
-  */
-  readonly expression: string;
-}
-
-export function cesAgentTransferRulesDeterministicTransferExpressionConditionToTerraform(struct?: CesAgentTransferRulesDeterministicTransferExpressionConditionOutputReference | CesAgentTransferRulesDeterministicTransferExpressionCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    expression: cdktf.stringToTerraform(struct!.expression),
-  }
-}
-
-
-export function cesAgentTransferRulesDeterministicTransferExpressionConditionToHclTerraform(struct?: CesAgentTransferRulesDeterministicTransferExpressionConditionOutputReference | CesAgentTransferRulesDeterministicTransferExpressionCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CesAgentTransferRulesDeterministicTransferExpressionConditionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CesAgentTransferRulesDeterministicTransferExpressionCondition | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._expression !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.expression = this._expression;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAgentTransferRulesDeterministicTransferExpressionCondition | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._expression = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._expression = value.expression;
-    }
-  }
-
-  // expression - computed: false, optional: false, required: true
-  private _expression?: string; 
-  public get expression() {
-    return this.getStringAttribute('expression');
-  }
-  public set expression(value: string) {
-    this._expression = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get expressionInput() {
-    return this._expression;
-  }
-}
-export interface CesAgentTransferRulesDeterministicTransferPythonCodeCondition {
-  /**
-  * The python code to execute. The function must be named
-  * 'should_trigger_transfer_callback'.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#python_code CesAgent#python_code}
-  */
-  readonly pythonCode: string;
-}
-
-export function cesAgentTransferRulesDeterministicTransferPythonCodeConditionToTerraform(struct?: CesAgentTransferRulesDeterministicTransferPythonCodeConditionOutputReference | CesAgentTransferRulesDeterministicTransferPythonCodeCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    python_code: cdktf.stringToTerraform(struct!.pythonCode),
-  }
-}
-
-
-export function cesAgentTransferRulesDeterministicTransferPythonCodeConditionToHclTerraform(struct?: CesAgentTransferRulesDeterministicTransferPythonCodeConditionOutputReference | CesAgentTransferRulesDeterministicTransferPythonCodeCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    python_code: {
-      value: cdktf.stringToHclTerraform(struct!.pythonCode),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CesAgentTransferRulesDeterministicTransferPythonCodeConditionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CesAgentTransferRulesDeterministicTransferPythonCodeCondition | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._pythonCode !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.pythonCode = this._pythonCode;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAgentTransferRulesDeterministicTransferPythonCodeCondition | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._pythonCode = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._pythonCode = value.pythonCode;
-    }
-  }
-
-  // python_code - computed: false, optional: false, required: true
-  private _pythonCode?: string; 
-  public get pythonCode() {
-    return this.getStringAttribute('python_code');
-  }
-  public set pythonCode(value: string) {
-    this._pythonCode = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pythonCodeInput() {
-    return this._pythonCode;
-  }
-}
-export interface CesAgentTransferRulesDeterministicTransfer {
-  /**
-  * expression_condition block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#expression_condition CesAgent#expression_condition}
-  */
-  readonly expressionCondition?: CesAgentTransferRulesDeterministicTransferExpressionCondition;
-  /**
-  * python_code_condition block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#python_code_condition CesAgent#python_code_condition}
-  */
-  readonly pythonCodeCondition?: CesAgentTransferRulesDeterministicTransferPythonCodeCondition;
-}
-
-export function cesAgentTransferRulesDeterministicTransferToTerraform(struct?: CesAgentTransferRulesDeterministicTransferOutputReference | CesAgentTransferRulesDeterministicTransfer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    expression_condition: cesAgentTransferRulesDeterministicTransferExpressionConditionToTerraform(struct!.expressionCondition),
-    python_code_condition: cesAgentTransferRulesDeterministicTransferPythonCodeConditionToTerraform(struct!.pythonCodeCondition),
-  }
-}
-
-
-export function cesAgentTransferRulesDeterministicTransferToHclTerraform(struct?: CesAgentTransferRulesDeterministicTransferOutputReference | CesAgentTransferRulesDeterministicTransfer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    expression_condition: {
-      value: cesAgentTransferRulesDeterministicTransferExpressionConditionToHclTerraform(struct!.expressionCondition),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CesAgentTransferRulesDeterministicTransferExpressionConditionList",
-    },
-    python_code_condition: {
-      value: cesAgentTransferRulesDeterministicTransferPythonCodeConditionToHclTerraform(struct!.pythonCodeCondition),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CesAgentTransferRulesDeterministicTransferPythonCodeConditionList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CesAgentTransferRulesDeterministicTransferOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CesAgentTransferRulesDeterministicTransfer | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._expressionCondition?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.expressionCondition = this._expressionCondition?.internalValue;
-    }
-    if (this._pythonCodeCondition?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.pythonCodeCondition = this._pythonCodeCondition?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAgentTransferRulesDeterministicTransfer | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._expressionCondition.internalValue = undefined;
-      this._pythonCodeCondition.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._expressionCondition.internalValue = value.expressionCondition;
-      this._pythonCodeCondition.internalValue = value.pythonCodeCondition;
-    }
-  }
-
-  // expression_condition - computed: false, optional: true, required: false
-  private _expressionCondition = new CesAgentTransferRulesDeterministicTransferExpressionConditionOutputReference(this, "expression_condition");
-  public get expressionCondition() {
-    return this._expressionCondition;
-  }
-  public putExpressionCondition(value: CesAgentTransferRulesDeterministicTransferExpressionCondition) {
-    this._expressionCondition.internalValue = value;
-  }
-  public resetExpressionCondition() {
-    this._expressionCondition.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get expressionConditionInput() {
-    return this._expressionCondition.internalValue;
-  }
-
-  // python_code_condition - computed: false, optional: true, required: false
-  private _pythonCodeCondition = new CesAgentTransferRulesDeterministicTransferPythonCodeConditionOutputReference(this, "python_code_condition");
-  public get pythonCodeCondition() {
-    return this._pythonCodeCondition;
-  }
-  public putPythonCodeCondition(value: CesAgentTransferRulesDeterministicTransferPythonCodeCondition) {
-    this._pythonCodeCondition.internalValue = value;
-  }
-  public resetPythonCodeCondition() {
-    this._pythonCodeCondition.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pythonCodeConditionInput() {
-    return this._pythonCodeCondition.internalValue;
-  }
-}
-export interface CesAgentTransferRulesDisablePlannerTransferExpressionCondition {
-  /**
-  * The string representation of cloud.api.Expression condition.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#expression CesAgent#expression}
-  */
-  readonly expression: string;
-}
-
-export function cesAgentTransferRulesDisablePlannerTransferExpressionConditionToTerraform(struct?: CesAgentTransferRulesDisablePlannerTransferExpressionConditionOutputReference | CesAgentTransferRulesDisablePlannerTransferExpressionCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    expression: cdktf.stringToTerraform(struct!.expression),
-  }
-}
-
-
-export function cesAgentTransferRulesDisablePlannerTransferExpressionConditionToHclTerraform(struct?: CesAgentTransferRulesDisablePlannerTransferExpressionConditionOutputReference | CesAgentTransferRulesDisablePlannerTransferExpressionCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CesAgentTransferRulesDisablePlannerTransferExpressionConditionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CesAgentTransferRulesDisablePlannerTransferExpressionCondition | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._expression !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.expression = this._expression;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAgentTransferRulesDisablePlannerTransferExpressionCondition | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._expression = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._expression = value.expression;
-    }
-  }
-
-  // expression - computed: false, optional: false, required: true
-  private _expression?: string; 
-  public get expression() {
-    return this.getStringAttribute('expression');
-  }
-  public set expression(value: string) {
-    this._expression = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get expressionInput() {
-    return this._expression;
-  }
-}
-export interface CesAgentTransferRulesDisablePlannerTransfer {
-  /**
-  * expression_condition block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#expression_condition CesAgent#expression_condition}
-  */
-  readonly expressionCondition: CesAgentTransferRulesDisablePlannerTransferExpressionCondition;
-}
-
-export function cesAgentTransferRulesDisablePlannerTransferToTerraform(struct?: CesAgentTransferRulesDisablePlannerTransferOutputReference | CesAgentTransferRulesDisablePlannerTransfer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    expression_condition: cesAgentTransferRulesDisablePlannerTransferExpressionConditionToTerraform(struct!.expressionCondition),
-  }
-}
-
-
-export function cesAgentTransferRulesDisablePlannerTransferToHclTerraform(struct?: CesAgentTransferRulesDisablePlannerTransferOutputReference | CesAgentTransferRulesDisablePlannerTransfer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    expression_condition: {
-      value: cesAgentTransferRulesDisablePlannerTransferExpressionConditionToHclTerraform(struct!.expressionCondition),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CesAgentTransferRulesDisablePlannerTransferExpressionConditionList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CesAgentTransferRulesDisablePlannerTransferOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CesAgentTransferRulesDisablePlannerTransfer | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._expressionCondition?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.expressionCondition = this._expressionCondition?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAgentTransferRulesDisablePlannerTransfer | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._expressionCondition.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._expressionCondition.internalValue = value.expressionCondition;
-    }
-  }
-
-  // expression_condition - computed: false, optional: false, required: true
-  private _expressionCondition = new CesAgentTransferRulesDisablePlannerTransferExpressionConditionOutputReference(this, "expression_condition");
-  public get expressionCondition() {
-    return this._expressionCondition;
-  }
-  public putExpressionCondition(value: CesAgentTransferRulesDisablePlannerTransferExpressionCondition) {
-    this._expressionCondition.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get expressionConditionInput() {
-    return this._expressionCondition.internalValue;
-  }
-}
-export interface CesAgentTransferRules {
-  /**
-  * The resource name of the child agent the rule applies to.
-  * Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#child_agent CesAgent#child_agent}
-  */
-  readonly childAgent: string;
-  /**
-  * The direction of the transfer. Possible values: ["PARENT_TO_CHILD", "CHILD_TO_PARENT"]
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#direction CesAgent#direction}
-  */
-  readonly direction: string;
-  /**
-  * deterministic_transfer block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#deterministic_transfer CesAgent#deterministic_transfer}
-  */
-  readonly deterministicTransfer?: CesAgentTransferRulesDeterministicTransfer;
-  /**
-  * disable_planner_transfer block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#disable_planner_transfer CesAgent#disable_planner_transfer}
-  */
-  readonly disablePlannerTransfer?: CesAgentTransferRulesDisablePlannerTransfer;
-}
-
-export function cesAgentTransferRulesToTerraform(struct?: CesAgentTransferRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    child_agent: cdktf.stringToTerraform(struct!.childAgent),
-    direction: cdktf.stringToTerraform(struct!.direction),
-    deterministic_transfer: cesAgentTransferRulesDeterministicTransferToTerraform(struct!.deterministicTransfer),
-    disable_planner_transfer: cesAgentTransferRulesDisablePlannerTransferToTerraform(struct!.disablePlannerTransfer),
-  }
-}
-
-
-export function cesAgentTransferRulesToHclTerraform(struct?: CesAgentTransferRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    child_agent: {
-      value: cdktf.stringToHclTerraform(struct!.childAgent),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    deterministic_transfer: {
-      value: cesAgentTransferRulesDeterministicTransferToHclTerraform(struct!.deterministicTransfer),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CesAgentTransferRulesDeterministicTransferList",
-    },
-    disable_planner_transfer: {
-      value: cesAgentTransferRulesDisablePlannerTransferToHclTerraform(struct!.disablePlannerTransfer),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CesAgentTransferRulesDisablePlannerTransferList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CesAgentTransferRulesOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAgentTransferRules | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._childAgent !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.childAgent = this._childAgent;
-    }
-    if (this._direction !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.direction = this._direction;
-    }
-    if (this._deterministicTransfer?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.deterministicTransfer = this._deterministicTransfer?.internalValue;
-    }
-    if (this._disablePlannerTransfer?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.disablePlannerTransfer = this._disablePlannerTransfer?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAgentTransferRules | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._childAgent = undefined;
-      this._direction = undefined;
-      this._deterministicTransfer.internalValue = undefined;
-      this._disablePlannerTransfer.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._childAgent = value.childAgent;
-      this._direction = value.direction;
-      this._deterministicTransfer.internalValue = value.deterministicTransfer;
-      this._disablePlannerTransfer.internalValue = value.disablePlannerTransfer;
-    }
-  }
-
-  // child_agent - computed: false, optional: false, required: true
-  private _childAgent?: string; 
-  public get childAgent() {
-    return this.getStringAttribute('child_agent');
-  }
-  public set childAgent(value: string) {
-    this._childAgent = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get childAgentInput() {
-    return this._childAgent;
-  }
-
-  // direction - computed: false, optional: false, required: true
-  private _direction?: string; 
-  public get direction() {
-    return this.getStringAttribute('direction');
-  }
-  public set direction(value: string) {
-    this._direction = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get directionInput() {
-    return this._direction;
-  }
-
-  // deterministic_transfer - computed: false, optional: true, required: false
-  private _deterministicTransfer = new CesAgentTransferRulesDeterministicTransferOutputReference(this, "deterministic_transfer");
-  public get deterministicTransfer() {
-    return this._deterministicTransfer;
-  }
-  public putDeterministicTransfer(value: CesAgentTransferRulesDeterministicTransfer) {
-    this._deterministicTransfer.internalValue = value;
-  }
-  public resetDeterministicTransfer() {
-    this._deterministicTransfer.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deterministicTransferInput() {
-    return this._deterministicTransfer.internalValue;
-  }
-
-  // disable_planner_transfer - computed: false, optional: true, required: false
-  private _disablePlannerTransfer = new CesAgentTransferRulesDisablePlannerTransferOutputReference(this, "disable_planner_transfer");
-  public get disablePlannerTransfer() {
-    return this._disablePlannerTransfer;
-  }
-  public putDisablePlannerTransfer(value: CesAgentTransferRulesDisablePlannerTransfer) {
-    this._disablePlannerTransfer.internalValue = value;
-  }
-  public resetDisablePlannerTransfer() {
-    this._disablePlannerTransfer.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get disablePlannerTransferInput() {
-    return this._disablePlannerTransfer.internalValue;
-  }
-}
-
-export class CesAgentTransferRulesList extends cdktf.ComplexList {
-  public internalValue? : CesAgentTransferRules[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAgentTransferRulesOutputReference {
-    return new CesAgentTransferRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent google_ces_agent}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent google_ces_agent}
 */
 export class CesAgent extends cdktf.TerraformResource {
 
@@ -2754,7 +2039,7 @@ export class CesAgent extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CesAgent resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesAgent to import
-  * @param importFromId The id of the existing CesAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesAgent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2766,7 +2051,7 @@ export class CesAgent extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/ces_agent google_ces_agent} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_agent google_ces_agent} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2777,8 +2062,8 @@ export class CesAgent extends cdktf.TerraformResource {
       terraformResourceType: 'google_ces_agent',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2811,7 +2096,6 @@ export class CesAgent extends cdktf.TerraformResource {
     this._remoteDialogflowAgent.internalValue = config.remoteDialogflowAgent;
     this._timeouts.internalValue = config.timeouts;
     this._toolsets.internalValue = config.toolsets;
-    this._transferRules.internalValue = config.transferRules;
   }
 
   // ==========
@@ -3202,22 +2486,6 @@ export class CesAgent extends cdktf.TerraformResource {
     return this._toolsets.internalValue;
   }
 
-  // transfer_rules - computed: false, optional: true, required: false
-  private _transferRules = new CesAgentTransferRulesList(this, "transfer_rules", false);
-  public get transferRules() {
-    return this._transferRules;
-  }
-  public putTransferRules(value: CesAgentTransferRules[] | cdktf.IResolvable) {
-    this._transferRules.internalValue = value;
-  }
-  public resetTransferRules() {
-    this._transferRules.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get transferRulesInput() {
-    return this._transferRules.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -3247,7 +2515,6 @@ export class CesAgent extends cdktf.TerraformResource {
       remote_dialogflow_agent: cesAgentRemoteDialogflowAgentToTerraform(this._remoteDialogflowAgent.internalValue),
       timeouts: cesAgentTimeoutsToTerraform(this._timeouts.internalValue),
       toolsets: cdktf.listMapper(cesAgentToolsetsToTerraform, true)(this._toolsets.internalValue),
-      transfer_rules: cdktf.listMapper(cesAgentTransferRulesToTerraform, true)(this._transferRules.internalValue),
     };
   }
 
@@ -3390,12 +2657,6 @@ export class CesAgent extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "CesAgentToolsetsList",
-      },
-      transfer_rules: {
-        value: cdktf.listMapperHcl(cesAgentTransferRulesToHclTerraform, true)(this._transferRules.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "CesAgentTransferRulesList",
       },
     };
 

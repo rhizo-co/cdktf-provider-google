@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_resource_policy_attachment
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_resource_policy_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +16,11 @@ export interface ComputeResourcePolicyAttachmentConfig extends cdktf.TerraformMe
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_resource_policy_attachment#deletion_policy ComputeResourcePolicyAttachment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_resource_policy_attachment#deletion_policy ComputeResourcePolicyAttachment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_resource_policy_attachment#id ComputeResourcePolicyAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_resource_policy_attachment#id ComputeResourcePolicyAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,40 +29,40 @@ export interface ComputeResourcePolicyAttachmentConfig extends cdktf.TerraformMe
   /**
   * The name of the instance in which the resource policies are attached to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_resource_policy_attachment#instance ComputeResourcePolicyAttachment#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_resource_policy_attachment#instance ComputeResourcePolicyAttachment#instance}
   */
   readonly instance: string;
   /**
   * The resource policy to be attached to the instance for scheduling start/stop
   * operations. Do not specify the self link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_resource_policy_attachment#name ComputeResourcePolicyAttachment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_resource_policy_attachment#name ComputeResourcePolicyAttachment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_resource_policy_attachment#project ComputeResourcePolicyAttachment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_resource_policy_attachment#project ComputeResourcePolicyAttachment#project}
   */
   readonly project?: string;
   /**
   * A reference to the zone where the instance resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_resource_policy_attachment#zone ComputeResourcePolicyAttachment#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_resource_policy_attachment#zone ComputeResourcePolicyAttachment#zone}
   */
   readonly zone?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_resource_policy_attachment#timeouts ComputeResourcePolicyAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_resource_policy_attachment#timeouts ComputeResourcePolicyAttachment#timeouts}
   */
   readonly timeouts?: ComputeResourcePolicyAttachmentTimeouts;
 }
 export interface ComputeResourcePolicyAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_resource_policy_attachment#create ComputeResourcePolicyAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_resource_policy_attachment#create ComputeResourcePolicyAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_resource_policy_attachment#delete ComputeResourcePolicyAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_resource_policy_attachment#delete ComputeResourcePolicyAttachment#delete}
   */
   readonly delete?: string;
 }
@@ -185,7 +185,7 @@ export class ComputeResourcePolicyAttachmentTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_resource_policy_attachment google_compute_resource_policy_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_resource_policy_attachment google_compute_resource_policy_attachment}
 */
 export class ComputeResourcePolicyAttachment extends cdktf.TerraformResource {
 
@@ -201,7 +201,7 @@ export class ComputeResourcePolicyAttachment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ComputeResourcePolicyAttachment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeResourcePolicyAttachment to import
-  * @param importFromId The id of the existing ComputeResourcePolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_resource_policy_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeResourcePolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_resource_policy_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeResourcePolicyAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -213,7 +213,7 @@ export class ComputeResourcePolicyAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_resource_policy_attachment google_compute_resource_policy_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_resource_policy_attachment google_compute_resource_policy_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,8 +224,8 @@ export class ComputeResourcePolicyAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_resource_policy_attachment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

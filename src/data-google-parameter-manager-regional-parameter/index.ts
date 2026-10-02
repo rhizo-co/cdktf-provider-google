@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/parameter_manager_regional_parameter
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleParameterManagerRegionalParameterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/parameter_manager_regional_parameter#id DataGoogleParameterManagerRegionalParameter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter#id DataGoogleParameterManagerRegionalParameter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,17 +17,17 @@ export interface DataGoogleParameterManagerRegionalParameterConfig extends cdktf
   /**
   * The location of the regional parameter. eg us-central1
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/parameter_manager_regional_parameter#location DataGoogleParameterManagerRegionalParameter#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter#location DataGoogleParameterManagerRegionalParameter#location}
   */
   readonly location: string;
   /**
   * This must be unique within the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/parameter_manager_regional_parameter#parameter_id DataGoogleParameterManagerRegionalParameter#parameter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter#parameter_id DataGoogleParameterManagerRegionalParameter#parameter_id}
   */
   readonly parameterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/parameter_manager_regional_parameter#project DataGoogleParameterManagerRegionalParameter#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter#project DataGoogleParameterManagerRegionalParameter#project}
   */
   readonly project?: string;
 }
@@ -113,7 +113,7 @@ export class DataGoogleParameterManagerRegionalParameterPolicyMemberList extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter}
 */
 export class DataGoogleParameterManagerRegionalParameter extends cdktf.TerraformDataSource {
 
@@ -129,7 +129,7 @@ export class DataGoogleParameterManagerRegionalParameter extends cdktf.Terraform
   * Generates CDKTF code for importing a DataGoogleParameterManagerRegionalParameter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleParameterManagerRegionalParameter to import
-  * @param importFromId The id of the existing DataGoogleParameterManagerRegionalParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/parameter_manager_regional_parameter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleParameterManagerRegionalParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleParameterManagerRegionalParameter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -141,7 +141,7 @@ export class DataGoogleParameterManagerRegionalParameter extends cdktf.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -152,8 +152,8 @@ export class DataGoogleParameterManagerRegionalParameter extends cdktf.Terraform
       terraformResourceType: 'google_parameter_manager_regional_parameter',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -272,12 +272,6 @@ export class DataGoogleParameterManagerRegionalParameter extends cdktf.Terraform
   // Temporarily expose input value. Use with caution.
   public get projectInput() {
     return this._project;
-  }
-
-  // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
-  public get tags() {
-    return this._tags;
   }
 
   // terraform_labels - computed: true, optional: false, required: false

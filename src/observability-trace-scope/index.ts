@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +16,7 @@ export interface ObservabilityTraceScopeConfig extends cdktf.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope#deletion_policy ObservabilityTraceScope#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#deletion_policy ObservabilityTraceScope#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -24,11 +24,11 @@ export interface ObservabilityTraceScopeConfig extends cdktf.TerraformMetaArgume
   * 
   * The maximum length of the description is 8000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope#description ObservabilityTraceScope#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#description ObservabilityTraceScope#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope#id ObservabilityTraceScope#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#id ObservabilityTraceScope#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,11 +37,11 @@ export interface ObservabilityTraceScopeConfig extends cdktf.TerraformMetaArgume
   /**
   * GCP region the TraceScope is stored in. Only 'global' is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope#location ObservabilityTraceScope#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#location ObservabilityTraceScope#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope#project ObservabilityTraceScope#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#project ObservabilityTraceScope#project}
   */
   readonly project?: string;
   /**
@@ -51,33 +51,33 @@ export interface ObservabilityTraceScopeConfig extends cdktf.TerraformMetaArgume
   * 
   * A trace scope can include a maximum of 20 projects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope#resource_names ObservabilityTraceScope#resource_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#resource_names ObservabilityTraceScope#resource_names}
   */
   readonly resourceNames: string[];
   /**
   * A client-assigned identifier for the trace scope.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope#trace_scope_id ObservabilityTraceScope#trace_scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#trace_scope_id ObservabilityTraceScope#trace_scope_id}
   */
   readonly traceScopeId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope#timeouts ObservabilityTraceScope#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#timeouts ObservabilityTraceScope#timeouts}
   */
   readonly timeouts?: ObservabilityTraceScopeTimeouts;
 }
 export interface ObservabilityTraceScopeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope#create ObservabilityTraceScope#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#create ObservabilityTraceScope#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope#delete ObservabilityTraceScope#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#delete ObservabilityTraceScope#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope#update ObservabilityTraceScope#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#update ObservabilityTraceScope#update}
   */
   readonly update?: string;
 }
@@ -229,7 +229,7 @@ export class ObservabilityTraceScopeTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope google_observability_trace_scope}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope google_observability_trace_scope}
 */
 export class ObservabilityTraceScope extends cdktf.TerraformResource {
 
@@ -245,7 +245,7 @@ export class ObservabilityTraceScope extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ObservabilityTraceScope resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObservabilityTraceScope to import
-  * @param importFromId The id of the existing ObservabilityTraceScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObservabilityTraceScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObservabilityTraceScope to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -257,7 +257,7 @@ export class ObservabilityTraceScope extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/observability_trace_scope google_observability_trace_scope} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope google_observability_trace_scope} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -268,8 +268,8 @@ export class ObservabilityTraceScope extends cdktf.TerraformResource {
       terraformResourceType: 'google_observability_trace_scope',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,17 +16,17 @@ export interface StorageTransferAgentPoolConfig extends cdktf.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool#deletion_policy StorageTransferAgentPool#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool#deletion_policy StorageTransferAgentPool#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Specifies the client-specified AgentPool description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool#display_name StorageTransferAgentPool#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool#display_name StorageTransferAgentPool#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,23 +44,23 @@ export interface StorageTransferAgentPoolConfig extends cdktf.TerraformMetaArgum
   * 
   * As expressed by the regular expression: ^(?!goog)[a-z]([a-z0-9-._~]*[a-z0-9])?$.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool#name StorageTransferAgentPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool#name StorageTransferAgentPool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}
   */
   readonly project?: string;
   /**
   * bandwidth_limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool#bandwidth_limit StorageTransferAgentPool#bandwidth_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool#bandwidth_limit StorageTransferAgentPool#bandwidth_limit}
   */
   readonly bandwidthLimit?: StorageTransferAgentPoolBandwidthLimit;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool#timeouts StorageTransferAgentPool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool#timeouts StorageTransferAgentPool#timeouts}
   */
   readonly timeouts?: StorageTransferAgentPoolTimeouts;
 }
@@ -68,7 +68,7 @@ export interface StorageTransferAgentPoolBandwidthLimit {
   /**
   * Bandwidth rate in megabytes per second, distributed across all the agents in the pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool#limit_mbps StorageTransferAgentPool#limit_mbps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool#limit_mbps StorageTransferAgentPool#limit_mbps}
   */
   readonly limitMbps: string;
 }
@@ -149,15 +149,15 @@ export class StorageTransferAgentPoolBandwidthLimitOutputReference extends cdktf
 }
 export interface StorageTransferAgentPoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool#create StorageTransferAgentPool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool#create StorageTransferAgentPool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool#delete StorageTransferAgentPool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool#delete StorageTransferAgentPool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool#update StorageTransferAgentPool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool#update StorageTransferAgentPool#update}
   */
   readonly update?: string;
 }
@@ -309,7 +309,7 @@ export class StorageTransferAgentPoolTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool}
 */
 export class StorageTransferAgentPool extends cdktf.TerraformResource {
 
@@ -325,7 +325,7 @@ export class StorageTransferAgentPool extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a StorageTransferAgentPool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageTransferAgentPool to import
-  * @param importFromId The id of the existing StorageTransferAgentPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageTransferAgentPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageTransferAgentPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -337,7 +337,7 @@ export class StorageTransferAgentPool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -348,8 +348,8 @@ export class StorageTransferAgentPool extends cdktf.TerraformResource {
       terraformResourceType: 'google_storage_transfer_agent_pool',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

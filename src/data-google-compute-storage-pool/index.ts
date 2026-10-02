@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_storage_pool
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_storage_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,17 +16,17 @@ export interface DataGoogleComputeStoragePoolConfig extends cdktf.TerraformMetaA
   * and all following characters must be a dash, lowercase letter, or digit,
   * except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_storage_pool#name DataGoogleComputeStoragePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_storage_pool#name DataGoogleComputeStoragePool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_storage_pool#project DataGoogleComputeStoragePool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_storage_pool#project DataGoogleComputeStoragePool#project}
   */
   readonly project?: string;
   /**
   * A reference to the zone where the storage pool resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_storage_pool#zone DataGoogleComputeStoragePool#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_storage_pool#zone DataGoogleComputeStoragePool#zone}
   */
   readonly zone: string;
 }
@@ -348,7 +348,7 @@ export class DataGoogleComputeStoragePoolStatusList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_storage_pool google_compute_storage_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_storage_pool google_compute_storage_pool}
 */
 export class DataGoogleComputeStoragePool extends cdktf.TerraformDataSource {
 
@@ -364,7 +364,7 @@ export class DataGoogleComputeStoragePool extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGoogleComputeStoragePool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeStoragePool to import
-  * @param importFromId The id of the existing DataGoogleComputeStoragePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_storage_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeStoragePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_storage_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeStoragePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -376,7 +376,7 @@ export class DataGoogleComputeStoragePool extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_storage_pool google_compute_storage_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_storage_pool google_compute_storage_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -387,8 +387,8 @@ export class DataGoogleComputeStoragePool extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_compute_storage_pool',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

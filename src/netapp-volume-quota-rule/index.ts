@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,23 +16,23 @@ export interface NetappVolumeQuotaRuleConfig extends cdktf.TerraformMetaArgument
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#deletion_policy NetappVolumeQuotaRule#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#deletion_policy NetappVolumeQuotaRule#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description for the quota rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#description NetappVolumeQuotaRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#description NetappVolumeQuotaRule#description}
   */
   readonly description?: string;
   /**
   * The maximum allowed capacity in MiB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#disk_limit_mib NetappVolumeQuotaRule#disk_limit_mib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#disk_limit_mib NetappVolumeQuotaRule#disk_limit_mib}
   */
   readonly diskLimitMib: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#id NetappVolumeQuotaRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#id NetappVolumeQuotaRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,23 +45,23 @@ export interface NetappVolumeQuotaRuleConfig extends cdktf.TerraformMetaArgument
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#labels NetappVolumeQuotaRule#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#labels NetappVolumeQuotaRule#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Loction of the quotaRule. QuotaRules are child resources of volumes and live in the same location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#location NetappVolumeQuotaRule#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#location NetappVolumeQuotaRule#location}
   */
   readonly location?: string;
   /**
   * The resource name of the quotaRule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#name NetappVolumeQuotaRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#name NetappVolumeQuotaRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#project NetappVolumeQuotaRule#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#project NetappVolumeQuotaRule#project}
   */
   readonly project?: string;
   /**
@@ -73,39 +73,39 @@ export interface NetappVolumeQuotaRuleConfig extends cdktf.TerraformMetaArgument
   *   - Windows SID for individual user quota
   * Leave empty for default quotas
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#target NetappVolumeQuotaRule#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#target NetappVolumeQuotaRule#target}
   */
   readonly target?: string;
   /**
   * Types of Quota Rule. Possible values: ["INDIVIDUAL_USER_QUOTA", "INDIVIDUAL_GROUP_QUOTA", "DEFAULT_USER_QUOTA", "DEFAULT_GROUP_QUOTA"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#type NetappVolumeQuotaRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#type NetappVolumeQuotaRule#type}
   */
   readonly type: string;
   /**
   * Name of the volume to create the quotaRule in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#volume_name NetappVolumeQuotaRule#volume_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#volume_name NetappVolumeQuotaRule#volume_name}
   */
   readonly volumeName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#timeouts NetappVolumeQuotaRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#timeouts NetappVolumeQuotaRule#timeouts}
   */
   readonly timeouts?: NetappVolumeQuotaRuleTimeouts;
 }
 export interface NetappVolumeQuotaRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#create NetappVolumeQuotaRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#create NetappVolumeQuotaRule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#delete NetappVolumeQuotaRule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#delete NetappVolumeQuotaRule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#update NetappVolumeQuotaRule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#update NetappVolumeQuotaRule#update}
   */
   readonly update?: string;
 }
@@ -257,7 +257,7 @@ export class NetappVolumeQuotaRuleTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule google_netapp_volume_quota_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule google_netapp_volume_quota_rule}
 */
 export class NetappVolumeQuotaRule extends cdktf.TerraformResource {
 
@@ -273,7 +273,7 @@ export class NetappVolumeQuotaRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetappVolumeQuotaRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappVolumeQuotaRule to import
-  * @param importFromId The id of the existing NetappVolumeQuotaRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetappVolumeQuotaRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappVolumeQuotaRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -285,7 +285,7 @@ export class NetappVolumeQuotaRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_volume_quota_rule google_netapp_volume_quota_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_volume_quota_rule google_netapp_volume_quota_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -296,8 +296,8 @@ export class NetappVolumeQuotaRule extends cdktf.TerraformResource {
       terraformResourceType: 'google_netapp_volume_quota_rule',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

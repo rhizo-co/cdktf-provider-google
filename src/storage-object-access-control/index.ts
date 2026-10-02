@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface StorageObjectAccessControlConfig extends cdktf.TerraformMetaArg
   /**
   * The name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control#bucket StorageObjectAccessControl#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#bucket StorageObjectAccessControl#bucket}
   */
   readonly bucket: string;
   /**
@@ -22,7 +22,7 @@ export interface StorageObjectAccessControlConfig extends cdktf.TerraformMetaArg
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control#deletion_policy StorageObjectAccessControl#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#deletion_policy StorageObjectAccessControl#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -36,11 +36,11 @@ export interface StorageObjectAccessControlConfig extends cdktf.TerraformMetaArg
   *   * allUsers
   *   * allAuthenticatedUsers
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control#entity StorageObjectAccessControl#entity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#entity StorageObjectAccessControl#entity}
   */
   readonly entity: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control#id StorageObjectAccessControl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#id StorageObjectAccessControl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -49,19 +49,19 @@ export interface StorageObjectAccessControlConfig extends cdktf.TerraformMetaArg
   /**
   * The name of the object to apply the access control to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control#object StorageObjectAccessControl#object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#object StorageObjectAccessControl#object}
   */
   readonly object: string;
   /**
   * The access permission for the entity. Possible values: ["OWNER", "READER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control#role StorageObjectAccessControl#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#role StorageObjectAccessControl#role}
   */
   readonly role: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control#timeouts StorageObjectAccessControl#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#timeouts StorageObjectAccessControl#timeouts}
   */
   readonly timeouts?: StorageObjectAccessControlTimeouts;
 }
@@ -147,15 +147,15 @@ export class StorageObjectAccessControlProjectTeamList extends cdktf.ComplexList
 }
 export interface StorageObjectAccessControlTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control#create StorageObjectAccessControl#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#create StorageObjectAccessControl#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control#delete StorageObjectAccessControl#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#delete StorageObjectAccessControl#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control#update StorageObjectAccessControl#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#update StorageObjectAccessControl#update}
   */
   readonly update?: string;
 }
@@ -307,7 +307,7 @@ export class StorageObjectAccessControlTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control google_storage_object_access_control}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control google_storage_object_access_control}
 */
 export class StorageObjectAccessControl extends cdktf.TerraformResource {
 
@@ -323,7 +323,7 @@ export class StorageObjectAccessControl extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a StorageObjectAccessControl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageObjectAccessControl to import
-  * @param importFromId The id of the existing StorageObjectAccessControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageObjectAccessControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageObjectAccessControl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -335,7 +335,7 @@ export class StorageObjectAccessControl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/storage_object_access_control google_storage_object_access_control} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control google_storage_object_access_control} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -346,8 +346,8 @@ export class StorageObjectAccessControl extends cdktf.TerraformResource {
       terraformResourceType: 'google_storage_object_access_control',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

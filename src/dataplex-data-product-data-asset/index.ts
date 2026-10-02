@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataplexDataProductDataAssetConfig extends cdktf.TerraformMetaA
   /**
   * The ID of the data asset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#data_asset_id DataplexDataProductDataAsset#data_asset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#data_asset_id DataplexDataProductDataAsset#data_asset_id}
   */
   readonly dataAssetId: string;
   /**
   * The ID of the parent data product.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#data_product_id DataplexDataProductDataAsset#data_product_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#data_product_id DataplexDataProductDataAsset#data_product_id}
   */
   readonly dataProductId: string;
   /**
@@ -28,11 +28,11 @@ export interface DataplexDataProductDataAssetConfig extends cdktf.TerraformMetaA
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#deletion_policy DataplexDataProductDataAsset#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#deletion_policy DataplexDataProductDataAsset#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#id DataplexDataProductDataAsset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#id DataplexDataProductDataAsset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,47 +44,47 @@ export interface DataplexDataProductDataAssetConfig extends cdktf.TerraformMetaA
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#labels DataplexDataProductDataAsset#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#labels DataplexDataProductDataAsset#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the data asset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#location DataplexDataProductDataAsset#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#location DataplexDataProductDataAsset#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#project DataplexDataProductDataAsset#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#project DataplexDataProductDataAsset#project}
   */
   readonly project?: string;
   /**
   * Full resource name of the cloud resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#resource DataplexDataProductDataAsset#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#resource DataplexDataProductDataAsset#resource}
   */
   readonly resource: string;
   /**
   * access_group_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#access_group_configs DataplexDataProductDataAsset#access_group_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#access_group_configs DataplexDataProductDataAsset#access_group_configs}
   */
   readonly accessGroupConfigs?: DataplexDataProductDataAssetAccessGroupConfigs[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#timeouts DataplexDataProductDataAsset#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#timeouts DataplexDataProductDataAsset#timeouts}
   */
   readonly timeouts?: DataplexDataProductDataAssetTimeouts;
 }
 export interface DataplexDataProductDataAssetAccessGroupConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#access_group DataplexDataProductDataAsset#access_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#access_group DataplexDataProductDataAsset#access_group}
   */
   readonly accessGroup: string;
   /**
   * IAM roles granted on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#iam_roles DataplexDataProductDataAsset#iam_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#iam_roles DataplexDataProductDataAsset#iam_roles}
   */
   readonly iamRoles?: string[];
 }
@@ -226,15 +226,15 @@ export class DataplexDataProductDataAssetAccessGroupConfigsList extends cdktf.Co
 }
 export interface DataplexDataProductDataAssetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#create DataplexDataProductDataAsset#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#create DataplexDataProductDataAsset#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#delete DataplexDataProductDataAsset#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#delete DataplexDataProductDataAsset#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#update DataplexDataProductDataAsset#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#update DataplexDataProductDataAsset#update}
   */
   readonly update?: string;
 }
@@ -386,7 +386,7 @@ export class DataplexDataProductDataAssetTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset google_dataplex_data_product_data_asset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset google_dataplex_data_product_data_asset}
 */
 export class DataplexDataProductDataAsset extends cdktf.TerraformResource {
 
@@ -402,7 +402,7 @@ export class DataplexDataProductDataAsset extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DataplexDataProductDataAsset resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataplexDataProductDataAsset to import
-  * @param importFromId The id of the existing DataplexDataProductDataAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataplexDataProductDataAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataplexDataProductDataAsset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -414,7 +414,7 @@ export class DataplexDataProductDataAsset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataplex_data_product_data_asset google_dataplex_data_product_data_asset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_data_asset google_dataplex_data_product_data_asset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -425,8 +425,8 @@ export class DataplexDataProductDataAsset extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataplex_data_product_data_asset',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

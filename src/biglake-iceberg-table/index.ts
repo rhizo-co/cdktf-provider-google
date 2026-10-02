@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface BiglakeIcebergTableConfig extends cdktf.TerraformMetaArguments 
   /**
   * The name of the IcebergCatalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#catalog BiglakeIcebergTable#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#catalog BiglakeIcebergTable#catalog}
   */
   readonly catalog: string;
   /**
@@ -22,11 +22,11 @@ export interface BiglakeIcebergTableConfig extends cdktf.TerraformMetaArguments 
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#deletion_policy BiglakeIcebergTable#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#deletion_policy BiglakeIcebergTable#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,53 +35,53 @@ export interface BiglakeIcebergTableConfig extends cdktf.TerraformMetaArguments 
   /**
   * The location of the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#location BiglakeIcebergTable#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#location BiglakeIcebergTable#location}
   */
   readonly location?: string;
   /**
   * The name of the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
   */
   readonly name: string;
   /**
   * The parent namespace of the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#namespace BiglakeIcebergTable#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#namespace BiglakeIcebergTable#namespace}
   */
   readonly namespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#project BiglakeIcebergTable#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#project BiglakeIcebergTable#project}
   */
   readonly project?: string;
   /**
   * User-defined properties for the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#properties BiglakeIcebergTable#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#properties BiglakeIcebergTable#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
   * partition_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#partition_spec BiglakeIcebergTable#partition_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#partition_spec BiglakeIcebergTable#partition_spec}
   */
   readonly partitionSpec?: BiglakeIcebergTablePartitionSpec;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#schema BiglakeIcebergTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#schema BiglakeIcebergTable#schema}
   */
   readonly schema: BiglakeIcebergTableSchema;
   /**
   * sort_order block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#sort_order BiglakeIcebergTable#sort_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#sort_order BiglakeIcebergTable#sort_order}
   */
   readonly sortOrder?: BiglakeIcebergTableSortOrder;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#timeouts BiglakeIcebergTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#timeouts BiglakeIcebergTable#timeouts}
   */
   readonly timeouts?: BiglakeIcebergTableTimeouts;
 }
@@ -89,19 +89,19 @@ export interface BiglakeIcebergTablePartitionSpecFields {
   /**
   * The name of the partition field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
   */
   readonly name: string;
   /**
   * The source field ID for the partition field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#source_id BiglakeIcebergTable#source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#source_id BiglakeIcebergTable#source_id}
   */
   readonly sourceId: number;
   /**
   * The transform to apply to the source field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#transform BiglakeIcebergTable#transform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#transform BiglakeIcebergTable#transform}
   */
   readonly transform: string;
 }
@@ -273,7 +273,7 @@ export interface BiglakeIcebergTablePartitionSpec {
   /**
   * fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
   */
   readonly fields: BiglakeIcebergTablePartitionSpecFields[] | cdktf.IResolvable;
 }
@@ -361,13 +361,13 @@ export interface BiglakeIcebergTableSchemaFields {
   /**
   * A description of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#doc BiglakeIcebergTable#doc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#doc BiglakeIcebergTable#doc}
   */
   readonly doc?: string;
   /**
   * The unique identifier of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -376,19 +376,19 @@ export interface BiglakeIcebergTableSchemaFields {
   /**
   * The name of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
   */
   readonly name: string;
   /**
   * Whether the field is required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#required BiglakeIcebergTable#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#required BiglakeIcebergTable#required}
   */
   readonly required: boolean | cdktf.IResolvable;
   /**
   * The type of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
   */
   readonly type: string;
 }
@@ -610,19 +610,19 @@ export interface BiglakeIcebergTableSchema {
   /**
   * The field IDs that make up the identifier for the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#identifier_field_ids BiglakeIcebergTable#identifier_field_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#identifier_field_ids BiglakeIcebergTable#identifier_field_ids}
   */
   readonly identifierFieldIds?: number[];
   /**
   * The type of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
   */
   readonly type?: string;
   /**
   * fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
   */
   readonly fields: BiglakeIcebergTableSchemaFields[] | cdktf.IResolvable;
 }
@@ -768,25 +768,25 @@ export interface BiglakeIcebergTableSortOrderFields {
   /**
   * The sort direction for the sort field. Possible values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#direction BiglakeIcebergTable#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#direction BiglakeIcebergTable#direction}
   */
   readonly direction: string;
   /**
   * The null ordering for the sort field. Possible values: "nulls-first", "nulls-last".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#null_order BiglakeIcebergTable#null_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#null_order BiglakeIcebergTable#null_order}
   */
   readonly nullOrder: string;
   /**
   * The source field ID for the sort field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#source_id BiglakeIcebergTable#source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#source_id BiglakeIcebergTable#source_id}
   */
   readonly sourceId: number;
   /**
   * The transform to apply to the source field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#transform BiglakeIcebergTable#transform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#transform BiglakeIcebergTable#transform}
   */
   readonly transform: string;
 }
@@ -979,7 +979,7 @@ export interface BiglakeIcebergTableSortOrder {
   /**
   * fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
   */
   readonly fields: BiglakeIcebergTableSortOrderFields[] | cdktf.IResolvable;
 }
@@ -1065,15 +1065,15 @@ export class BiglakeIcebergTableSortOrderOutputReference extends cdktf.ComplexOb
 }
 export interface BiglakeIcebergTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#create BiglakeIcebergTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#create BiglakeIcebergTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#delete BiglakeIcebergTable#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#delete BiglakeIcebergTable#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#update BiglakeIcebergTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#update BiglakeIcebergTable#update}
   */
   readonly update?: string;
 }
@@ -1225,7 +1225,7 @@ export class BiglakeIcebergTableTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table google_biglake_iceberg_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table google_biglake_iceberg_table}
 */
 export class BiglakeIcebergTable extends cdktf.TerraformResource {
 
@@ -1241,7 +1241,7 @@ export class BiglakeIcebergTable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BiglakeIcebergTable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BiglakeIcebergTable to import
-  * @param importFromId The id of the existing BiglakeIcebergTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BiglakeIcebergTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BiglakeIcebergTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1253,7 +1253,7 @@ export class BiglakeIcebergTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/biglake_iceberg_table google_biglake_iceberg_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_table google_biglake_iceberg_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1264,8 +1264,8 @@ export class BiglakeIcebergTable extends cdktf.TerraformResource {
       terraformResourceType: 'google_biglake_iceberg_table',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

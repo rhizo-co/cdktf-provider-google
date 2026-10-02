@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,14 +16,14 @@ export interface NetworkSecurityInterceptDeploymentConfig extends cdktf.Terrafor
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#deletion_policy NetworkSecurityInterceptDeployment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#deletion_policy NetworkSecurityInterceptDeployment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * User-provided description of the deployment.
   * Used as additional context for the deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#description NetworkSecurityInterceptDeployment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#description NetworkSecurityInterceptDeployment#description}
   */
   readonly description?: string;
   /**
@@ -31,11 +31,11 @@ export interface NetworkSecurityInterceptDeploymentConfig extends cdktf.Terrafor
   * 'projects/123456789/regions/us-central1/forwardingRules/my-rule'.
   * See https://google.aip.dev/124.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#forwarding_rule NetworkSecurityInterceptDeployment#forwarding_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#forwarding_rule NetworkSecurityInterceptDeployment#forwarding_rule}
   */
   readonly forwardingRule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#id NetworkSecurityInterceptDeployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#id NetworkSecurityInterceptDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,14 +46,14 @@ export interface NetworkSecurityInterceptDeploymentConfig extends cdktf.Terrafor
   * 'projects/123456789/locations/global/interceptDeploymentGroups/my-dg'.
   * See https://google.aip.dev/124.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#intercept_deployment_group NetworkSecurityInterceptDeployment#intercept_deployment_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#intercept_deployment_group NetworkSecurityInterceptDeployment#intercept_deployment_group}
   */
   readonly interceptDeploymentGroup: string;
   /**
   * The ID to use for the new deployment, which will become the final
   * component of the deployment's resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#intercept_deployment_id NetworkSecurityInterceptDeployment#intercept_deployment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#intercept_deployment_id NetworkSecurityInterceptDeployment#intercept_deployment_id}
   */
   readonly interceptDeploymentId: string;
   /**
@@ -62,37 +62,37 @@ export interface NetworkSecurityInterceptDeploymentConfig extends cdktf.Terrafor
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#labels NetworkSecurityInterceptDeployment#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#labels NetworkSecurityInterceptDeployment#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The cloud location of the deployment, e.g. 'us-central1-a' or 'asia-south1-b'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#location NetworkSecurityInterceptDeployment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#location NetworkSecurityInterceptDeployment#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#project NetworkSecurityInterceptDeployment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#project NetworkSecurityInterceptDeployment#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#timeouts NetworkSecurityInterceptDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#timeouts NetworkSecurityInterceptDeployment#timeouts}
   */
   readonly timeouts?: NetworkSecurityInterceptDeploymentTimeouts;
 }
 export interface NetworkSecurityInterceptDeploymentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#create NetworkSecurityInterceptDeployment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#create NetworkSecurityInterceptDeployment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#delete NetworkSecurityInterceptDeployment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#delete NetworkSecurityInterceptDeployment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#update NetworkSecurityInterceptDeployment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#update NetworkSecurityInterceptDeployment#update}
   */
   readonly update?: string;
 }
@@ -244,7 +244,7 @@ export class NetworkSecurityInterceptDeploymentTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment}
 */
 export class NetworkSecurityInterceptDeployment extends cdktf.TerraformResource {
 
@@ -260,7 +260,7 @@ export class NetworkSecurityInterceptDeployment extends cdktf.TerraformResource 
   * Generates CDKTF code for importing a NetworkSecurityInterceptDeployment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityInterceptDeployment to import
-  * @param importFromId The id of the existing NetworkSecurityInterceptDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecurityInterceptDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityInterceptDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -272,7 +272,7 @@ export class NetworkSecurityInterceptDeployment extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -283,8 +283,8 @@ export class NetworkSecurityInterceptDeployment extends cdktf.TerraformResource 
       terraformResourceType: 'google_network_security_intercept_deployment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/backup_dr_backup_plan_associations
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_plan_associations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleBackupDrBackupPlanAssociationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/backup_dr_backup_plan_associations#id DataGoogleBackupDrBackupPlanAssociations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_plan_associations#id DataGoogleBackupDrBackupPlanAssociations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,15 +17,21 @@ export interface DataGoogleBackupDrBackupPlanAssociationsConfig extends cdktf.Te
   /**
   * The location to list the backup plan associations from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/backup_dr_backup_plan_associations#location DataGoogleBackupDrBackupPlanAssociations#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_plan_associations#location DataGoogleBackupDrBackupPlanAssociations#location}
   */
   readonly location: string;
   /**
   * The ID of the project in which the resource belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/backup_dr_backup_plan_associations#project DataGoogleBackupDrBackupPlanAssociations#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_plan_associations#project DataGoogleBackupDrBackupPlanAssociations#project}
   */
   readonly project?: string;
+  /**
+  * The resource type of workload on which backup plan is applied. Examples include, "compute.googleapis.com/Instance", "compute.googleapis.com/Disk".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_plan_associations#resource_type DataGoogleBackupDrBackupPlanAssociations#resource_type}
+  */
+  readonly resourceType?: string;
 }
 export interface DataGoogleBackupDrBackupPlanAssociationsAssociationsRulesConfigInfoLastBackupError {
 }
@@ -301,7 +307,7 @@ export class DataGoogleBackupDrBackupPlanAssociationsAssociationsList extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/backup_dr_backup_plan_associations google_backup_dr_backup_plan_associations}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_plan_associations google_backup_dr_backup_plan_associations}
 */
 export class DataGoogleBackupDrBackupPlanAssociations extends cdktf.TerraformDataSource {
 
@@ -317,7 +323,7 @@ export class DataGoogleBackupDrBackupPlanAssociations extends cdktf.TerraformDat
   * Generates CDKTF code for importing a DataGoogleBackupDrBackupPlanAssociations resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleBackupDrBackupPlanAssociations to import
-  * @param importFromId The id of the existing DataGoogleBackupDrBackupPlanAssociations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/backup_dr_backup_plan_associations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleBackupDrBackupPlanAssociations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_plan_associations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleBackupDrBackupPlanAssociations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -329,7 +335,7 @@ export class DataGoogleBackupDrBackupPlanAssociations extends cdktf.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/backup_dr_backup_plan_associations google_backup_dr_backup_plan_associations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_plan_associations google_backup_dr_backup_plan_associations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -340,8 +346,8 @@ export class DataGoogleBackupDrBackupPlanAssociations extends cdktf.TerraformDat
       terraformResourceType: 'google_backup_dr_backup_plan_associations',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -354,6 +360,7 @@ export class DataGoogleBackupDrBackupPlanAssociations extends cdktf.TerraformDat
     this._id = config.id;
     this._location = config.location;
     this._project = config.project;
+    this._resourceType = config.resourceType;
   }
 
   // ==========
@@ -411,6 +418,22 @@ export class DataGoogleBackupDrBackupPlanAssociations extends cdktf.TerraformDat
     return this._project;
   }
 
+  // resource_type - computed: false, optional: true, required: false
+  private _resourceType?: string; 
+  public get resourceType() {
+    return this.getStringAttribute('resource_type');
+  }
+  public set resourceType(value: string) {
+    this._resourceType = value;
+  }
+  public resetResourceType() {
+    this._resourceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTypeInput() {
+    return this._resourceType;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -420,6 +443,7 @@ export class DataGoogleBackupDrBackupPlanAssociations extends cdktf.TerraformDat
       id: cdktf.stringToTerraform(this._id),
       location: cdktf.stringToTerraform(this._location),
       project: cdktf.stringToTerraform(this._project),
+      resource_type: cdktf.stringToTerraform(this._resourceType),
     };
   }
 
@@ -439,6 +463,12 @@ export class DataGoogleBackupDrBackupPlanAssociations extends cdktf.TerraformDat
       },
       project: {
         value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_type: {
+        value: cdktf.stringToHclTerraform(this._resourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

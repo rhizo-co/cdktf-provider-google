@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/dataplex_data_product_iam_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/dataplex_data_product_iam_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleDataplexDataProductIamPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/dataplex_data_product_iam_policy#data_product_id DataGoogleDataplexDataProductIamPolicy#data_product_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/dataplex_data_product_iam_policy#data_product_id DataGoogleDataplexDataProductIamPolicy#data_product_id}
   */
   readonly dataProductId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/dataplex_data_product_iam_policy#id DataGoogleDataplexDataProductIamPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/dataplex_data_product_iam_policy#id DataGoogleDataplexDataProductIamPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/dataplex_data_product_iam_policy#location DataGoogleDataplexDataProductIamPolicy#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/dataplex_data_product_iam_policy#location DataGoogleDataplexDataProductIamPolicy#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/dataplex_data_product_iam_policy#project DataGoogleDataplexDataProductIamPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/dataplex_data_product_iam_policy#project DataGoogleDataplexDataProductIamPolicy#project}
   */
   readonly project?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/dataplex_data_product_iam_policy google_dataplex_data_product_iam_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/dataplex_data_product_iam_policy google_dataplex_data_product_iam_policy}
 */
 export class DataGoogleDataplexDataProductIamPolicy extends cdktf.TerraformDataSource {
 
@@ -45,7 +45,7 @@ export class DataGoogleDataplexDataProductIamPolicy extends cdktf.TerraformDataS
   * Generates CDKTF code for importing a DataGoogleDataplexDataProductIamPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleDataplexDataProductIamPolicy to import
-  * @param importFromId The id of the existing DataGoogleDataplexDataProductIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/dataplex_data_product_iam_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleDataplexDataProductIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/dataplex_data_product_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleDataplexDataProductIamPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -57,7 +57,7 @@ export class DataGoogleDataplexDataProductIamPolicy extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/dataplex_data_product_iam_policy google_dataplex_data_product_iam_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/dataplex_data_product_iam_policy google_dataplex_data_product_iam_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,8 +68,8 @@ export class DataGoogleDataplexDataProductIamPolicy extends cdktf.TerraformDataS
       terraformResourceType: 'google_dataplex_data_product_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

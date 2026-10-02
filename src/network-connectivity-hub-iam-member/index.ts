@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_connectivity_hub_iam_member
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkConnectivityHubIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_connectivity_hub_iam_member#hub NetworkConnectivityHubIamMember#hub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_member#hub NetworkConnectivityHubIamMember#hub}
   */
   readonly hub: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_connectivity_hub_iam_member#id NetworkConnectivityHubIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_member#id NetworkConnectivityHubIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_connectivity_hub_iam_member#member NetworkConnectivityHubIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_member#member NetworkConnectivityHubIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_connectivity_hub_iam_member#project NetworkConnectivityHubIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_member#project NetworkConnectivityHubIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_connectivity_hub_iam_member#role NetworkConnectivityHubIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_member#role NetworkConnectivityHubIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_connectivity_hub_iam_member#condition NetworkConnectivityHubIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_member#condition NetworkConnectivityHubIamMember#condition}
   */
   readonly condition?: NetworkConnectivityHubIamMemberCondition;
 }
 export interface NetworkConnectivityHubIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_connectivity_hub_iam_member#description NetworkConnectivityHubIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_member#description NetworkConnectivityHubIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_connectivity_hub_iam_member#expression NetworkConnectivityHubIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_member#expression NetworkConnectivityHubIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_connectivity_hub_iam_member#title NetworkConnectivityHubIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_member#title NetworkConnectivityHubIamMember#title}
   */
   readonly title: string;
 }
@@ -183,7 +183,7 @@ export class NetworkConnectivityHubIamMemberConditionOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_connectivity_hub_iam_member google_network_connectivity_hub_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_member google_network_connectivity_hub_iam_member}
 */
 export class NetworkConnectivityHubIamMember extends cdktf.TerraformResource {
 
@@ -199,7 +199,7 @@ export class NetworkConnectivityHubIamMember extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkConnectivityHubIamMember resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkConnectivityHubIamMember to import
-  * @param importFromId The id of the existing NetworkConnectivityHubIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_connectivity_hub_iam_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkConnectivityHubIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkConnectivityHubIamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -211,7 +211,7 @@ export class NetworkConnectivityHubIamMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/network_connectivity_hub_iam_member google_network_connectivity_hub_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_member google_network_connectivity_hub_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -222,8 +222,8 @@ export class NetworkConnectivityHubIamMember extends cdktf.TerraformResource {
       terraformResourceType: 'google_network_connectivity_hub_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

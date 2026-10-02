@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface DataformRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * This field uses a custom implementation please refer to documentation under /hashicorp/terraform-provider-google-beta/website/docs/r/dataform_repository.html.markdown for specifics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#deletion_policy DataformRepository#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#deletion_policy DataformRepository#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Optional. The repository's user-friendly name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#display_name DataformRepository#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#display_name DataformRepository#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#id DataformRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#id DataformRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +30,7 @@ export interface DataformRepositoryConfig extends cdktf.TerraformMetaArguments {
   * Optional. The reference to a KMS encryption key. If provided, it will be used to encrypt user data in the repository and all child resources.
   * It is not possible to add or update the encryption key after the repository is created. Example projects/[kms_project_id]/locations/[region]/keyRings/[key_region]/cryptoKeys/[key]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#kms_key_name DataformRepository#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#kms_key_name DataformRepository#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
@@ -41,55 +41,55 @@ export interface DataformRepositoryConfig extends cdktf.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#labels DataformRepository#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#labels DataformRepository#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The repository's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#name DataformRepository#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#name DataformRepository#name}
   */
   readonly name: string;
   /**
   * Optional. The name of the Secret Manager secret version to be used to interpolate variables into the .npmrc file for package installation operations. Must be in the format projects/* /secrets/* /versions/*. The file itself must be in a JSON format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#npmrc_environment_variables_secret_version DataformRepository#npmrc_environment_variables_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#npmrc_environment_variables_secret_version DataformRepository#npmrc_environment_variables_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly npmrcEnvironmentVariablesSecretVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#project DataformRepository#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#project DataformRepository#project}
   */
   readonly project?: string;
   /**
   * A reference to the region
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#region DataformRepository#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#region DataformRepository#region}
   */
   readonly region?: string;
   /**
   * The service account to run workflow invocations under.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#service_account DataformRepository#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#service_account DataformRepository#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * git_remote_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#git_remote_settings DataformRepository#git_remote_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#git_remote_settings DataformRepository#git_remote_settings}
   */
   readonly gitRemoteSettings?: DataformRepositoryGitRemoteSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#timeouts DataformRepository#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#timeouts DataformRepository#timeouts}
   */
   readonly timeouts?: DataformRepositoryTimeouts;
   /**
   * workspace_compilation_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#workspace_compilation_overrides DataformRepository#workspace_compilation_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#workspace_compilation_overrides DataformRepository#workspace_compilation_overrides}
   */
   readonly workspaceCompilationOverrides?: DataformRepositoryWorkspaceCompilationOverrides;
 }
@@ -97,13 +97,13 @@ export interface DataformRepositoryGitRemoteSettingsSshAuthenticationConfig {
   /**
   * Content of a public SSH key to verify an identity of a remote Git host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#host_public_key DataformRepository#host_public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#host_public_key DataformRepository#host_public_key}
   */
   readonly hostPublicKey: string;
   /**
   * The name of the Secret Manager secret version to use as a ssh private key for Git operations. Must be in the format projects/* /secrets/* /versions/*.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#user_private_key_secret_version DataformRepository#user_private_key_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#user_private_key_secret_version DataformRepository#user_private_key_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -214,7 +214,7 @@ export interface DataformRepositoryGitRemoteSettings {
   /**
   * The name of the Secret Manager secret version to use as an authentication token for Git operations. This secret is for assigning with HTTPS only(for SSH use 'ssh_authentication_config'). Must be in the format projects/* /secrets/* /versions/*.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#authentication_token_secret_version DataformRepository#authentication_token_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#authentication_token_secret_version DataformRepository#authentication_token_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -222,13 +222,13 @@ export interface DataformRepositoryGitRemoteSettings {
   /**
   * The Git remote's default branch name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#default_branch DataformRepository#default_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#default_branch DataformRepository#default_branch}
   */
   readonly defaultBranch: string;
   /**
   * The name of the Developer Connect GitRepositoryLink to use for machine credentials. Must be in the format projects/* /locations/* /connections/* /gitRepositoryLinks/*.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#git_repository_link DataformRepository#git_repository_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#git_repository_link DataformRepository#git_repository_link}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -236,13 +236,13 @@ export interface DataformRepositoryGitRemoteSettings {
   /**
   * The Git remote's URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#url DataformRepository#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#url DataformRepository#url}
   */
   readonly url: string;
   /**
   * ssh_authentication_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#ssh_authentication_config DataformRepository#ssh_authentication_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#ssh_authentication_config DataformRepository#ssh_authentication_config}
   */
   readonly sshAuthenticationConfig?: DataformRepositoryGitRemoteSettingsSshAuthenticationConfig;
 }
@@ -441,15 +441,15 @@ export class DataformRepositoryGitRemoteSettingsOutputReference extends cdktf.Co
 }
 export interface DataformRepositoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#create DataformRepository#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#create DataformRepository#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#delete DataformRepository#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#delete DataformRepository#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#update DataformRepository#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#update DataformRepository#update}
   */
   readonly update?: string;
 }
@@ -603,19 +603,19 @@ export interface DataformRepositoryWorkspaceCompilationOverrides {
   /**
   * The default database (Google Cloud project ID).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#default_database DataformRepository#default_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#default_database DataformRepository#default_database}
   */
   readonly defaultDatabase?: string;
   /**
   * The suffix that should be appended to all schema (BigQuery dataset ID) names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#schema_suffix DataformRepository#schema_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#schema_suffix DataformRepository#schema_suffix}
   */
   readonly schemaSuffix?: string;
   /**
   * The prefix that should be prepended to all table names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#table_prefix DataformRepository#table_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#table_prefix DataformRepository#table_prefix}
   */
   readonly tablePrefix?: string;
 }
@@ -757,7 +757,7 @@ export class DataformRepositoryWorkspaceCompilationOverridesOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository google_dataform_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository google_dataform_repository}
 */
 export class DataformRepository extends cdktf.TerraformResource {
 
@@ -773,7 +773,7 @@ export class DataformRepository extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DataformRepository resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataformRepository to import
-  * @param importFromId The id of the existing DataformRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataformRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataformRepository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -785,7 +785,7 @@ export class DataformRepository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/dataform_repository google_dataform_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataform_repository google_dataform_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -796,8 +796,8 @@ export class DataformRepository extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataform_repository',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

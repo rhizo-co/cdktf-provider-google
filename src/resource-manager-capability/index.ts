@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/resource_manager_capability
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/resource_manager_capability
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface ResourceManagerCapabilityConfig extends cdktf.TerraformMetaArgu
   /**
   * Capability name that should be updated on the folder.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/resource_manager_capability#capability_name ResourceManagerCapability#capability_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/resource_manager_capability#capability_name ResourceManagerCapability#capability_name}
   */
   readonly capabilityName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/resource_manager_capability#id ResourceManagerCapability#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/resource_manager_capability#id ResourceManagerCapability#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,33 +23,33 @@ export interface ResourceManagerCapabilityConfig extends cdktf.TerraformMetaArgu
   /**
   * Folder on which Capability needs to be updated in the format folders/folder_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/resource_manager_capability#parent ResourceManagerCapability#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/resource_manager_capability#parent ResourceManagerCapability#parent}
   */
   readonly parent: string;
   /**
   * Capability Value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/resource_manager_capability#value ResourceManagerCapability#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/resource_manager_capability#value ResourceManagerCapability#value}
   */
   readonly value: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/resource_manager_capability#timeouts ResourceManagerCapability#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/resource_manager_capability#timeouts ResourceManagerCapability#timeouts}
   */
   readonly timeouts?: ResourceManagerCapabilityTimeouts;
 }
 export interface ResourceManagerCapabilityTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/resource_manager_capability#create ResourceManagerCapability#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/resource_manager_capability#create ResourceManagerCapability#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/resource_manager_capability#delete ResourceManagerCapability#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/resource_manager_capability#delete ResourceManagerCapability#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/resource_manager_capability#update ResourceManagerCapability#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/resource_manager_capability#update ResourceManagerCapability#update}
   */
   readonly update?: string;
 }
@@ -201,7 +201,7 @@ export class ResourceManagerCapabilityTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/resource_manager_capability google_resource_manager_capability}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/resource_manager_capability google_resource_manager_capability}
 */
 export class ResourceManagerCapability extends cdktf.TerraformResource {
 
@@ -217,7 +217,7 @@ export class ResourceManagerCapability extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ResourceManagerCapability resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ResourceManagerCapability to import
-  * @param importFromId The id of the existing ResourceManagerCapability that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/resource_manager_capability#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ResourceManagerCapability that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/resource_manager_capability#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ResourceManagerCapability to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -229,7 +229,7 @@ export class ResourceManagerCapability extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/resource_manager_capability google_resource_manager_capability} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/resource_manager_capability google_resource_manager_capability} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -240,8 +240,8 @@ export class ResourceManagerCapability extends cdktf.TerraformResource {
       terraformResourceType: 'google_resource_manager_capability',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

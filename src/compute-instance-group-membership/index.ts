@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_instance_group_membership
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +16,11 @@ export interface ComputeInstanceGroupMembershipConfig extends cdktf.TerraformMet
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_instance_group_membership#deletion_policy ComputeInstanceGroupMembership#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_membership#deletion_policy ComputeInstanceGroupMembership#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,39 +29,39 @@ export interface ComputeInstanceGroupMembershipConfig extends cdktf.TerraformMet
   /**
   * An instance being added to the InstanceGroup
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_instance_group_membership#instance ComputeInstanceGroupMembership#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_membership#instance ComputeInstanceGroupMembership#instance}
   */
   readonly instance: string;
   /**
   * Represents an Instance Group resource name that the instance belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_instance_group_membership#instance_group ComputeInstanceGroupMembership#instance_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_membership#instance_group ComputeInstanceGroupMembership#instance_group}
   */
   readonly instanceGroup: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}
   */
   readonly project?: string;
   /**
   * A reference to the zone where the instance group resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_instance_group_membership#zone ComputeInstanceGroupMembership#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_membership#zone ComputeInstanceGroupMembership#zone}
   */
   readonly zone?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_instance_group_membership#timeouts ComputeInstanceGroupMembership#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_membership#timeouts ComputeInstanceGroupMembership#timeouts}
   */
   readonly timeouts?: ComputeInstanceGroupMembershipTimeouts;
 }
 export interface ComputeInstanceGroupMembershipTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_instance_group_membership#create ComputeInstanceGroupMembership#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_membership#create ComputeInstanceGroupMembership#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_instance_group_membership#delete ComputeInstanceGroupMembership#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_membership#delete ComputeInstanceGroupMembership#delete}
   */
   readonly delete?: string;
 }
@@ -184,7 +184,7 @@ export class ComputeInstanceGroupMembershipTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_instance_group_membership google_compute_instance_group_membership}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_membership google_compute_instance_group_membership}
 */
 export class ComputeInstanceGroupMembership extends cdktf.TerraformResource {
 
@@ -200,7 +200,7 @@ export class ComputeInstanceGroupMembership extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ComputeInstanceGroupMembership resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeInstanceGroupMembership to import
-  * @param importFromId The id of the existing ComputeInstanceGroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_instance_group_membership#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeInstanceGroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_membership#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeInstanceGroupMembership to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -212,7 +212,7 @@ export class ComputeInstanceGroupMembership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_instance_group_membership google_compute_instance_group_membership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_membership google_compute_instance_group_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -223,8 +223,8 @@ export class ComputeInstanceGroupMembership extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_group_membership',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,39 +8,39 @@ import * as cdktf from 'cdktf';
 
 export interface ComputeSnapshotSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}
   */
   readonly project?: string;
   /**
   * storage_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings#storage_location ComputeSnapshotSettings#storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings#storage_location ComputeSnapshotSettings#storage_location}
   */
   readonly storageLocation: ComputeSnapshotSettingsStorageLocation;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings#timeouts ComputeSnapshotSettings#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings#timeouts ComputeSnapshotSettings#timeouts}
   */
   readonly timeouts?: ComputeSnapshotSettingsTimeouts;
 }
 export interface ComputeSnapshotSettingsStorageLocationLocations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}
   */
   readonly location: string;
   /**
   * Name of the location. It should be one of the Cloud Storage buckets.
   * Only one location can be specified. (should match location)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings#name ComputeSnapshotSettings#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings#name ComputeSnapshotSettings#name}
   */
   readonly name: string;
 }
@@ -181,13 +181,13 @@ export interface ComputeSnapshotSettingsStorageLocation {
   /**
   * The chosen location policy Possible values: ["NEAREST_MULTI_REGION", "LOCAL_REGION", "SPECIFIC_LOCATIONS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings#policy ComputeSnapshotSettings#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings#policy ComputeSnapshotSettings#policy}
   */
   readonly policy: string;
   /**
   * locations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings#locations ComputeSnapshotSettings#locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings#locations ComputeSnapshotSettings#locations}
   */
   readonly locations?: ComputeSnapshotSettingsStorageLocationLocations[] | cdktf.IResolvable;
 }
@@ -297,15 +297,15 @@ export class ComputeSnapshotSettingsStorageLocationOutputReference extends cdktf
 }
 export interface ComputeSnapshotSettingsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}
   */
   readonly update?: string;
 }
@@ -457,7 +457,7 @@ export class ComputeSnapshotSettingsTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings google_compute_snapshot_settings}
 */
 export class ComputeSnapshotSettings extends cdktf.TerraformResource {
 
@@ -473,7 +473,7 @@ export class ComputeSnapshotSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ComputeSnapshotSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeSnapshotSettings to import
-  * @param importFromId The id of the existing ComputeSnapshotSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeSnapshotSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeSnapshotSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -485,7 +485,7 @@ export class ComputeSnapshotSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_snapshot_settings google_compute_snapshot_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -496,8 +496,8 @@ export class ComputeSnapshotSettings extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_snapshot_settings',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

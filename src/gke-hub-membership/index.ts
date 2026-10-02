@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +16,11 @@ export interface GkeHubMembershipConfig extends cdktf.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#deletion_policy GkeHubMembership#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#deletion_policy GkeHubMembership#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#id GkeHubMembership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#id GkeHubMembership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -33,42 +33,42 @@ export interface GkeHubMembershipConfig extends cdktf.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#labels GkeHubMembership#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#labels GkeHubMembership#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Location of the membership.
   * The default value is 'global'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#location GkeHubMembership#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#location GkeHubMembership#location}
   */
   readonly location?: string;
   /**
   * The client-provided identifier of the membership.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#membership_id GkeHubMembership#membership_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#membership_id GkeHubMembership#membership_id}
   */
   readonly membershipId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#project GkeHubMembership#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#project GkeHubMembership#project}
   */
   readonly project?: string;
   /**
   * authority block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#authority GkeHubMembership#authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#authority GkeHubMembership#authority}
   */
   readonly authority?: GkeHubMembershipAuthority;
   /**
   * endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#endpoint GkeHubMembership#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#endpoint GkeHubMembership#endpoint}
   */
   readonly endpoint?: GkeHubMembershipEndpoint;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#timeouts GkeHubMembership#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#timeouts GkeHubMembership#timeouts}
   */
   readonly timeouts?: GkeHubMembershipTimeouts;
 }
@@ -77,7 +77,7 @@ export interface GkeHubMembershipAuthority {
   * A JSON Web Token (JWT) issuer URI. 'issuer' must start with 'https://' and // be a valid
   * with length <2000 characters. For example: 'https://container.googleapis.com/v1/projects/my-project/locations/us-west1/clusters/my-cluster'. If the cluster is provisioned with Terraform, this is '"https://container.googleapis.com/v1/${google_container_cluster.my-cluster.id}"'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#issuer GkeHubMembership#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#issuer GkeHubMembership#issuer}
   */
   readonly issuer: string;
 }
@@ -164,7 +164,7 @@ export interface GkeHubMembershipEndpointGkeCluster {
   * this can be '"//container.googleapis.com/${google_container_cluster.my-cluster.id}"' or
   * 'google_container_cluster.my-cluster.id'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#resource_link GkeHubMembership#resource_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#resource_link GkeHubMembership#resource_link}
   */
   readonly resourceLink: string;
 }
@@ -247,7 +247,7 @@ export interface GkeHubMembershipEndpoint {
   /**
   * gke_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#gke_cluster GkeHubMembership#gke_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#gke_cluster GkeHubMembership#gke_cluster}
   */
   readonly gkeCluster?: GkeHubMembershipEndpointGkeCluster;
 }
@@ -331,15 +331,15 @@ export class GkeHubMembershipEndpointOutputReference extends cdktf.ComplexObject
 }
 export interface GkeHubMembershipTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#create GkeHubMembership#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#create GkeHubMembership#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#delete GkeHubMembership#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#delete GkeHubMembership#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#update GkeHubMembership#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#update GkeHubMembership#update}
   */
   readonly update?: string;
 }
@@ -491,7 +491,7 @@ export class GkeHubMembershipTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership google_gke_hub_membership}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership google_gke_hub_membership}
 */
 export class GkeHubMembership extends cdktf.TerraformResource {
 
@@ -507,7 +507,7 @@ export class GkeHubMembership extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GkeHubMembership resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GkeHubMembership to import
-  * @param importFromId The id of the existing GkeHubMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GkeHubMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GkeHubMembership to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -519,7 +519,7 @@ export class GkeHubMembership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_membership google_gke_hub_membership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_membership google_gke_hub_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -530,8 +530,8 @@ export class GkeHubMembership extends cdktf.TerraformResource {
       terraformResourceType: 'google_gke_hub_membership',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

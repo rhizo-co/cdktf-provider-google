@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_service_attachment
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_service_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleComputeServiceAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_service_attachment#id DataGoogleComputeServiceAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_service_attachment#id DataGoogleComputeServiceAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,17 +22,17 @@ export interface DataGoogleComputeServiceAttachmentConfig extends cdktf.Terrafor
   * following characters must be a dash, lowercase letter, or digit,
   * except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_service_attachment#name DataGoogleComputeServiceAttachment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_service_attachment#name DataGoogleComputeServiceAttachment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_service_attachment#project DataGoogleComputeServiceAttachment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_service_attachment#project DataGoogleComputeServiceAttachment#project}
   */
   readonly project?: string;
   /**
   * URL of the region where the resource resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_service_attachment#region DataGoogleComputeServiceAttachment#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_service_attachment#region DataGoogleComputeServiceAttachment#region}
   */
   readonly region?: string;
 }
@@ -308,7 +308,7 @@ export class DataGoogleComputeServiceAttachmentPscServiceAttachmentIdList extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_service_attachment google_compute_service_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_service_attachment google_compute_service_attachment}
 */
 export class DataGoogleComputeServiceAttachment extends cdktf.TerraformDataSource {
 
@@ -324,7 +324,7 @@ export class DataGoogleComputeServiceAttachment extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataGoogleComputeServiceAttachment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeServiceAttachment to import
-  * @param importFromId The id of the existing DataGoogleComputeServiceAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_service_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeServiceAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_service_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeServiceAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -336,7 +336,7 @@ export class DataGoogleComputeServiceAttachment extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/data-sources/compute_service_attachment google_compute_service_attachment} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_service_attachment google_compute_service_attachment} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -347,8 +347,8 @@ export class DataGoogleComputeServiceAttachment extends cdktf.TerraformDataSourc
       terraformResourceType: 'google_compute_service_attachment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -387,7 +387,7 @@ export class DataGoogleComputeServiceAttachment extends cdktf.TerraformDataSourc
 
   // consumer_reject_lists - computed: true, optional: false, required: false
   public get consumerRejectLists() {
-    return cdktf.Fn.tolist(this.getListAttribute('consumer_reject_lists'));
+    return this.getListAttribute('consumer_reject_lists');
   }
 
   // deletion_policy - computed: true, optional: false, required: false
@@ -446,7 +446,7 @@ export class DataGoogleComputeServiceAttachment extends cdktf.TerraformDataSourc
 
   // nat_subnets - computed: true, optional: false, required: false
   public get natSubnets() {
-    return cdktf.Fn.tolist(this.getListAttribute('nat_subnets'));
+    return this.getListAttribute('nat_subnets');
   }
 
   // project - computed: false, optional: true, required: false

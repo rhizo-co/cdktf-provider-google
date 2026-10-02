@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,23 +16,23 @@ export interface MigrationCenterReportConfigAConfig extends cdktf.TerraformMetaA
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#deletion_policy MigrationCenterReportConfigA#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#deletion_policy MigrationCenterReportConfigA#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Free-text description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#description MigrationCenterReportConfigA#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#description MigrationCenterReportConfigA#description}
   */
   readonly description?: string;
   /**
   * User-friendly display name. Maximum length is 63 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#display_name MigrationCenterReportConfigA#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#display_name MigrationCenterReportConfigA#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#id MigrationCenterReportConfigA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#id MigrationCenterReportConfigA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,11 +41,11 @@ export interface MigrationCenterReportConfigAConfig extends cdktf.TerraformMetaA
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#location MigrationCenterReportConfigA#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#location MigrationCenterReportConfigA#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#project MigrationCenterReportConfigA#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#project MigrationCenterReportConfigA#project}
   */
   readonly project?: string;
   /**
@@ -55,19 +55,19 @@ export interface MigrationCenterReportConfigAConfig extends cdktf.TerraformMetaA
   * maximum length of 63 characters. The ID must match the regular expression:
   * [a-z]([a-z0-9-]{0,61}[a-z0-9])?.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#report_config_id MigrationCenterReportConfigA#report_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#report_config_id MigrationCenterReportConfigA#report_config_id}
   */
   readonly reportConfigId: string;
   /**
   * group_preferenceset_assignments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#group_preferenceset_assignments MigrationCenterReportConfigA#group_preferenceset_assignments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#group_preferenceset_assignments MigrationCenterReportConfigA#group_preferenceset_assignments}
   */
   readonly groupPreferencesetAssignments: MigrationCenterReportConfigGroupPreferencesetAssignments[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#timeouts MigrationCenterReportConfigA#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#timeouts MigrationCenterReportConfigA#timeouts}
   */
   readonly timeouts?: MigrationCenterReportConfigTimeouts;
 }
@@ -75,13 +75,13 @@ export interface MigrationCenterReportConfigGroupPreferencesetAssignments {
   /**
   * Name of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#group MigrationCenterReportConfigA#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#group MigrationCenterReportConfigA#group}
   */
   readonly group: string;
   /**
   * Name of the Preference Set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#preference_set MigrationCenterReportConfigA#preference_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#preference_set MigrationCenterReportConfigA#preference_set}
   */
   readonly preferenceSet: string;
 }
@@ -220,11 +220,11 @@ export class MigrationCenterReportConfigGroupPreferencesetAssignmentsList extend
 }
 export interface MigrationCenterReportConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#create MigrationCenterReportConfigA#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#create MigrationCenterReportConfigA#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#delete MigrationCenterReportConfigA#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#delete MigrationCenterReportConfigA#delete}
   */
   readonly delete?: string;
 }
@@ -347,7 +347,7 @@ export class MigrationCenterReportConfigTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config google_migration_center_report_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config google_migration_center_report_config}
 */
 export class MigrationCenterReportConfigA extends cdktf.TerraformResource {
 
@@ -363,7 +363,7 @@ export class MigrationCenterReportConfigA extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MigrationCenterReportConfigA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MigrationCenterReportConfigA to import
-  * @param importFromId The id of the existing MigrationCenterReportConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MigrationCenterReportConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MigrationCenterReportConfigA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -375,7 +375,7 @@ export class MigrationCenterReportConfigA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_report_config google_migration_center_report_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_report_config google_migration_center_report_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -386,8 +386,8 @@ export class MigrationCenterReportConfigA extends cdktf.TerraformResource {
       terraformResourceType: 'google_migration_center_report_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

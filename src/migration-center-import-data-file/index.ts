@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,13 +16,13 @@ export interface MigrationCenterImportDataFileConfig extends cdktf.TerraformMeta
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file#deletion_policy MigrationCenterImportDataFile#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file#deletion_policy MigrationCenterImportDataFile#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * User-friendly display name. Maximum length is 63 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file#display_name MigrationCenterImportDataFile#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file#display_name MigrationCenterImportDataFile#display_name}
   */
   readonly displayName?: string;
   /**
@@ -34,11 +34,11 @@ export interface MigrationCenterImportDataFileConfig extends cdktf.TerraformMeta
   * IMPORT_JOB_FORMAT_STRATOZONE_CSV
   * IMPORT_JOB_FORMAT_DATABASE_ZIP
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file#format MigrationCenterImportDataFile#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file#format MigrationCenterImportDataFile#format}
   */
   readonly format: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file#id MigrationCenterImportDataFile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file#id MigrationCenterImportDataFile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,29 +47,29 @@ export interface MigrationCenterImportDataFileConfig extends cdktf.TerraformMeta
   /**
   * The ID of the new data file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file#import_data_file_id MigrationCenterImportDataFile#import_data_file_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file#import_data_file_id MigrationCenterImportDataFile#import_data_file_id}
   */
   readonly importDataFileId: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file#import_job MigrationCenterImportDataFile#import_job}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file#import_job MigrationCenterImportDataFile#import_job}
   */
   readonly importJob: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file#location MigrationCenterImportDataFile#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file#location MigrationCenterImportDataFile#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file#project MigrationCenterImportDataFile#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file#project MigrationCenterImportDataFile#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file#timeouts MigrationCenterImportDataFile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file#timeouts MigrationCenterImportDataFile#timeouts}
   */
   readonly timeouts?: MigrationCenterImportDataFileTimeouts;
 }
@@ -161,11 +161,11 @@ export class MigrationCenterImportDataFileUploadFileInfoList extends cdktf.Compl
 }
 export interface MigrationCenterImportDataFileTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file#create MigrationCenterImportDataFile#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file#create MigrationCenterImportDataFile#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file#delete MigrationCenterImportDataFile#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file#delete MigrationCenterImportDataFile#delete}
   */
   readonly delete?: string;
 }
@@ -288,7 +288,7 @@ export class MigrationCenterImportDataFileTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file google_migration_center_import_data_file}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file google_migration_center_import_data_file}
 */
 export class MigrationCenterImportDataFile extends cdktf.TerraformResource {
 
@@ -304,7 +304,7 @@ export class MigrationCenterImportDataFile extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MigrationCenterImportDataFile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MigrationCenterImportDataFile to import
-  * @param importFromId The id of the existing MigrationCenterImportDataFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MigrationCenterImportDataFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MigrationCenterImportDataFile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -316,7 +316,7 @@ export class MigrationCenterImportDataFile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/migration_center_import_data_file google_migration_center_import_data_file} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_import_data_file google_migration_center_import_data_file} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -327,8 +327,8 @@ export class MigrationCenterImportDataFile extends cdktf.TerraformResource {
       terraformResourceType: 'google_migration_center_import_data_file',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_region_instant_snapshot_iam_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_instant_snapshot_iam_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface ComputeRegionInstantSnapshotIamPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_region_instant_snapshot_iam_policy#id ComputeRegionInstantSnapshotIamPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_instant_snapshot_iam_policy#id ComputeRegionInstantSnapshotIamPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_region_instant_snapshot_iam_policy#name ComputeRegionInstantSnapshotIamPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_instant_snapshot_iam_policy#name ComputeRegionInstantSnapshotIamPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_region_instant_snapshot_iam_policy#policy_data ComputeRegionInstantSnapshotIamPolicy#policy_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_instant_snapshot_iam_policy#policy_data ComputeRegionInstantSnapshotIamPolicy#policy_data}
   */
   readonly policyData: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_region_instant_snapshot_iam_policy#project ComputeRegionInstantSnapshotIamPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_instant_snapshot_iam_policy#project ComputeRegionInstantSnapshotIamPolicy#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_region_instant_snapshot_iam_policy#region ComputeRegionInstantSnapshotIamPolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_instant_snapshot_iam_policy#region ComputeRegionInstantSnapshotIamPolicy#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_region_instant_snapshot_iam_policy google_compute_region_instant_snapshot_iam_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_instant_snapshot_iam_policy google_compute_region_instant_snapshot_iam_policy}
 */
 export class ComputeRegionInstantSnapshotIamPolicy extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class ComputeRegionInstantSnapshotIamPolicy extends cdktf.TerraformResour
   * Generates CDKTF code for importing a ComputeRegionInstantSnapshotIamPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeRegionInstantSnapshotIamPolicy to import
-  * @param importFromId The id of the existing ComputeRegionInstantSnapshotIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_region_instant_snapshot_iam_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeRegionInstantSnapshotIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_instant_snapshot_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeRegionInstantSnapshotIamPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class ComputeRegionInstantSnapshotIamPolicy extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/compute_region_instant_snapshot_iam_policy google_compute_region_instant_snapshot_iam_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_instant_snapshot_iam_policy google_compute_region_instant_snapshot_iam_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,8 +72,8 @@ export class ComputeRegionInstantSnapshotIamPolicy extends cdktf.TerraformResour
       terraformResourceType: 'google_compute_region_instant_snapshot_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

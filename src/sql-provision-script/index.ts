@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/sql_provision_script
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_provision_script
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,7 +14,7 @@ export interface SqlProvisionScriptConfig extends cdktf.TerraformMetaArguments {
   * 				a database. You can create and use a database in the script or explicitly reference a
   * 				google_sql_database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/sql_provision_script#database SqlProvisionScript#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_provision_script#database SqlProvisionScript#database}
   */
   readonly database?: string;
   /**
@@ -22,17 +22,17 @@ export interface SqlProvisionScriptConfig extends cdktf.TerraformMetaArguments {
   * 				It must be "ABANDON" to allow Terraform to abandon the resources. If you want to delete resources, add statements
   * 				in the script such as "drop … if exists".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/sql_provision_script#deletion_policy SqlProvisionScript#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_provision_script#deletion_policy SqlProvisionScript#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the provision script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/sql_provision_script#description SqlProvisionScript#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_provision_script#description SqlProvisionScript#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/sql_provision_script#id SqlProvisionScript#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_provision_script#id SqlProvisionScript#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,7 +41,7 @@ export interface SqlProvisionScriptConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the Cloud SQL instance. Changing this forces the script to be run on the new instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/sql_provision_script#instance SqlProvisionScript#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_provision_script#instance SqlProvisionScript#instance}
   */
   readonly instance: string;
   /**
@@ -52,13 +52,13 @@ export interface SqlProvisionScriptConfig extends cdktf.TerraformMetaArguments {
   * 				Otherwise, the script is run using the identity account used to apply your Terraform config.
   * 				Changing this field forces the script to be run again.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/sql_provision_script#password_secret_version SqlProvisionScript#password_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_provision_script#password_secret_version SqlProvisionScript#password_secret_version}
   */
   readonly passwordSecretVersion?: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/sql_provision_script#project SqlProvisionScript#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_provision_script#project SqlProvisionScript#project}
   */
   readonly project?: string;
   /**
@@ -68,7 +68,7 @@ export interface SqlProvisionScriptConfig extends cdktf.TerraformMetaArguments {
   * 				"if not exists (select …) then … end if" to prevent existence-related errors. If it's not
   * 				possible to make a statement idempotent, you can run it once and then remove it from this script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/sql_provision_script#script SqlProvisionScript#script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_provision_script#script SqlProvisionScript#script}
   */
   readonly script: string;
   /**
@@ -78,13 +78,13 @@ export interface SqlProvisionScriptConfig extends cdktf.TerraformMetaArguments {
   * 				the script is run using the identity account used to apply your Terraform config.
   * 				Changing this forces the script to be run using the new user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/sql_provision_script#user SqlProvisionScript#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_provision_script#user SqlProvisionScript#user}
   */
   readonly user?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/sql_provision_script google_sql_provision_script}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_provision_script google_sql_provision_script}
 */
 export class SqlProvisionScript extends cdktf.TerraformResource {
 
@@ -100,7 +100,7 @@ export class SqlProvisionScript extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SqlProvisionScript resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlProvisionScript to import
-  * @param importFromId The id of the existing SqlProvisionScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/sql_provision_script#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlProvisionScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_provision_script#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlProvisionScript to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -112,7 +112,7 @@ export class SqlProvisionScript extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/sql_provision_script google_sql_provision_script} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_provision_script google_sql_provision_script} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -123,8 +123,8 @@ export class SqlProvisionScript extends cdktf.TerraformResource {
       terraformResourceType: 'google_sql_provision_script',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

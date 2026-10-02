@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,47 +16,37 @@ export interface GkeHubFleetConfig extends cdktf.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#deletion_policy GkeHubFleet#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#deletion_policy GkeHubFleet#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A user-assigned display name of the Fleet. When present, it must be between 4 to 30 characters.
   * Allowed characters are: lowercase and uppercase letters, numbers, hyphen, single-quote, double-quote, space, and exclamation point.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#display_name GkeHubFleet#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#display_name GkeHubFleet#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#id GkeHubFleet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#id GkeHubFleet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Labels for this Fleet.
-  * 
-  * 
-  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#labels GkeHubFleet#labels}
-  */
-  readonly labels?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#project GkeHubFleet#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#project GkeHubFleet#project}
   */
   readonly project?: string;
   /**
   * default_cluster_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#default_cluster_config GkeHubFleet#default_cluster_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#default_cluster_config GkeHubFleet#default_cluster_config}
   */
   readonly defaultClusterConfig?: GkeHubFleetDefaultClusterConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#timeouts GkeHubFleet#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#timeouts GkeHubFleet#timeouts}
   */
   readonly timeouts?: GkeHubFleetTimeouts;
 }
@@ -141,7 +131,7 @@ export interface GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyB
   * platform policies have the following format:
   * 'projects/{project_number}/platforms/gke/policies/{policy_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#name GkeHubFleet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#name GkeHubFleet#name}
   */
   readonly name?: string;
 }
@@ -259,13 +249,13 @@ export interface GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig {
   /**
   * Mode of operation for binauthz policy evaluation. Possible values: ["DISABLED", "POLICY_BINDINGS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#evaluation_mode GkeHubFleet#evaluation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#evaluation_mode GkeHubFleet#evaluation_mode}
   */
   readonly evaluationMode?: string;
   /**
   * policy_bindings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#policy_bindings GkeHubFleet#policy_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#policy_bindings GkeHubFleet#policy_bindings}
   */
   readonly policyBindings?: GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindings[] | cdktf.IResolvable;
 }
@@ -376,256 +366,17 @@ export class GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputRefer
     return this._policyBindings.internalValue;
   }
 }
-export interface GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards {
-  /**
-  * Name of the compliance standard.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#standard GkeHubFleet#standard}
-  */
-  readonly standard?: string;
-}
-
-export function gkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsToTerraform(struct?: GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    standard: cdktf.stringToTerraform(struct!.standard),
-  }
-}
-
-
-export function gkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsToHclTerraform(struct?: GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    standard: {
-      value: cdktf.stringToHclTerraform(struct!.standard),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._standard !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.standard = this._standard;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._standard = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._standard = value.standard;
-    }
-  }
-
-  // standard - computed: false, optional: true, required: false
-  private _standard?: string; 
-  public get standard() {
-    return this.getStringAttribute('standard');
-  }
-  public set standard(value: string) {
-    this._standard = value;
-  }
-  public resetStandard() {
-    this._standard = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get standardInput() {
-    return this._standard;
-  }
-}
-
-export class GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList extends cdktf.ComplexList {
-  public internalValue? : GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference {
-    return new GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GkeHubFleetDefaultClusterConfigCompliancePostureConfig {
-  /**
-  * Sets which mode to use for Compliance Posture features. Possible values: ["DISABLED", "ENABLED"]
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#mode GkeHubFleet#mode}
-  */
-  readonly mode?: string;
-  /**
-  * compliance_standards block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#compliance_standards GkeHubFleet#compliance_standards}
-  */
-  readonly complianceStandards?: GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards[] | cdktf.IResolvable;
-}
-
-export function gkeHubFleetDefaultClusterConfigCompliancePostureConfigToTerraform(struct?: GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference | GkeHubFleetDefaultClusterConfigCompliancePostureConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    compliance_standards: cdktf.listMapper(gkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsToTerraform, true)(struct!.complianceStandards),
-  }
-}
-
-
-export function gkeHubFleetDefaultClusterConfigCompliancePostureConfigToHclTerraform(struct?: GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference | GkeHubFleetDefaultClusterConfigCompliancePostureConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    compliance_standards: {
-      value: cdktf.listMapperHcl(gkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsToHclTerraform, true)(struct!.complianceStandards),
-      isBlock: true,
-      type: "list",
-      storageClassType: "GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): GkeHubFleetDefaultClusterConfigCompliancePostureConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._mode !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.mode = this._mode;
-    }
-    if (this._complianceStandards?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.complianceStandards = this._complianceStandards?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GkeHubFleetDefaultClusterConfigCompliancePostureConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._mode = undefined;
-      this._complianceStandards.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._mode = value.mode;
-      this._complianceStandards.internalValue = value.complianceStandards;
-    }
-  }
-
-  // mode - computed: false, optional: true, required: false
-  private _mode?: string; 
-  public get mode() {
-    return this.getStringAttribute('mode');
-  }
-  public set mode(value: string) {
-    this._mode = value;
-  }
-  public resetMode() {
-    this._mode = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get modeInput() {
-    return this._mode;
-  }
-
-  // compliance_standards - computed: false, optional: true, required: false
-  private _complianceStandards = new GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList(this, "compliance_standards", false);
-  public get complianceStandards() {
-    return this._complianceStandards;
-  }
-  public putComplianceStandards(value: GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards[] | cdktf.IResolvable) {
-    this._complianceStandards.internalValue = value;
-  }
-  public resetComplianceStandards() {
-    this._complianceStandards.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get complianceStandardsInput() {
-    return this._complianceStandards.internalValue;
-  }
-}
 export interface GkeHubFleetDefaultClusterConfigSecurityPostureConfig {
   /**
   * Sets which mode to use for Security Posture features. Possible values: ["DISABLED", "BASIC", "ENTERPRISE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#mode GkeHubFleet#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#mode GkeHubFleet#mode}
   */
   readonly mode?: string;
   /**
   * Sets which mode to use for vulnerability scanning. Possible values: ["VULNERABILITY_DISABLED", "VULNERABILITY_BASIC", "VULNERABILITY_ENTERPRISE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#vulnerability_mode GkeHubFleet#vulnerability_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#vulnerability_mode GkeHubFleet#vulnerability_mode}
   */
   readonly vulnerabilityMode?: string;
 }
@@ -740,19 +491,13 @@ export interface GkeHubFleetDefaultClusterConfig {
   /**
   * binary_authorization_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#binary_authorization_config GkeHubFleet#binary_authorization_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#binary_authorization_config GkeHubFleet#binary_authorization_config}
   */
   readonly binaryAuthorizationConfig?: GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig;
   /**
-  * compliance_posture_config block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#compliance_posture_config GkeHubFleet#compliance_posture_config}
-  */
-  readonly compliancePostureConfig?: GkeHubFleetDefaultClusterConfigCompliancePostureConfig;
-  /**
   * security_posture_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#security_posture_config GkeHubFleet#security_posture_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#security_posture_config GkeHubFleet#security_posture_config}
   */
   readonly securityPostureConfig?: GkeHubFleetDefaultClusterConfigSecurityPostureConfig;
 }
@@ -764,7 +509,6 @@ export function gkeHubFleetDefaultClusterConfigToTerraform(struct?: GkeHubFleetD
   }
   return {
     binary_authorization_config: gkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigToTerraform(struct!.binaryAuthorizationConfig),
-    compliance_posture_config: gkeHubFleetDefaultClusterConfigCompliancePostureConfigToTerraform(struct!.compliancePostureConfig),
     security_posture_config: gkeHubFleetDefaultClusterConfigSecurityPostureConfigToTerraform(struct!.securityPostureConfig),
   }
 }
@@ -781,12 +525,6 @@ export function gkeHubFleetDefaultClusterConfigToHclTerraform(struct?: GkeHubFle
       isBlock: true,
       type: "list",
       storageClassType: "GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigList",
-    },
-    compliance_posture_config: {
-      value: gkeHubFleetDefaultClusterConfigCompliancePostureConfigToHclTerraform(struct!.compliancePostureConfig),
-      isBlock: true,
-      type: "list",
-      storageClassType: "GkeHubFleetDefaultClusterConfigCompliancePostureConfigList",
     },
     security_posture_config: {
       value: gkeHubFleetDefaultClusterConfigSecurityPostureConfigToHclTerraform(struct!.securityPostureConfig),
@@ -818,10 +556,6 @@ export class GkeHubFleetDefaultClusterConfigOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.binaryAuthorizationConfig = this._binaryAuthorizationConfig?.internalValue;
     }
-    if (this._compliancePostureConfig?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.compliancePostureConfig = this._compliancePostureConfig?.internalValue;
-    }
     if (this._securityPostureConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.securityPostureConfig = this._securityPostureConfig?.internalValue;
@@ -833,13 +567,11 @@ export class GkeHubFleetDefaultClusterConfigOutputReference extends cdktf.Comple
     if (value === undefined) {
       this.isEmptyObject = false;
       this._binaryAuthorizationConfig.internalValue = undefined;
-      this._compliancePostureConfig.internalValue = undefined;
       this._securityPostureConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._binaryAuthorizationConfig.internalValue = value.binaryAuthorizationConfig;
-      this._compliancePostureConfig.internalValue = value.compliancePostureConfig;
       this._securityPostureConfig.internalValue = value.securityPostureConfig;
     }
   }
@@ -860,22 +592,6 @@ export class GkeHubFleetDefaultClusterConfigOutputReference extends cdktf.Comple
     return this._binaryAuthorizationConfig.internalValue;
   }
 
-  // compliance_posture_config - computed: false, optional: true, required: false
-  private _compliancePostureConfig = new GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference(this, "compliance_posture_config");
-  public get compliancePostureConfig() {
-    return this._compliancePostureConfig;
-  }
-  public putCompliancePostureConfig(value: GkeHubFleetDefaultClusterConfigCompliancePostureConfig) {
-    this._compliancePostureConfig.internalValue = value;
-  }
-  public resetCompliancePostureConfig() {
-    this._compliancePostureConfig.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get compliancePostureConfigInput() {
-    return this._compliancePostureConfig.internalValue;
-  }
-
   // security_posture_config - computed: false, optional: true, required: false
   private _securityPostureConfig = new GkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference(this, "security_posture_config");
   public get securityPostureConfig() {
@@ -894,15 +610,15 @@ export class GkeHubFleetDefaultClusterConfigOutputReference extends cdktf.Comple
 }
 export interface GkeHubFleetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#create GkeHubFleet#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#create GkeHubFleet#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#delete GkeHubFleet#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#delete GkeHubFleet#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#update GkeHubFleet#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#update GkeHubFleet#update}
   */
   readonly update?: string;
 }
@@ -1054,7 +770,7 @@ export class GkeHubFleetTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet google_gke_hub_fleet}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet google_gke_hub_fleet}
 */
 export class GkeHubFleet extends cdktf.TerraformResource {
 
@@ -1070,7 +786,7 @@ export class GkeHubFleet extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GkeHubFleet resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GkeHubFleet to import
-  * @param importFromId The id of the existing GkeHubFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GkeHubFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GkeHubFleet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1082,7 +798,7 @@ export class GkeHubFleet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/gke_hub_fleet google_gke_hub_fleet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet google_gke_hub_fleet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1093,8 +809,8 @@ export class GkeHubFleet extends cdktf.TerraformResource {
       terraformResourceType: 'google_gke_hub_fleet',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1107,7 +823,6 @@ export class GkeHubFleet extends cdktf.TerraformResource {
     this._deletionPolicy = config.deletionPolicy;
     this._displayName = config.displayName;
     this._id = config.id;
-    this._labels = config.labels;
     this._project = config.project;
     this._defaultClusterConfig.internalValue = config.defaultClusterConfig;
     this._timeouts.internalValue = config.timeouts;
@@ -1159,12 +874,6 @@ export class GkeHubFleet extends cdktf.TerraformResource {
     return this._displayName;
   }
 
-  // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
-  public get effectiveLabels() {
-    return this._effectiveLabels;
-  }
-
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -1179,22 +888,6 @@ export class GkeHubFleet extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
-  }
-
-  // labels - computed: false, optional: true, required: false
-  private _labels?: { [key: string]: string }; 
-  public get labels() {
-    return this.getStringMapAttribute('labels');
-  }
-  public set labels(value: { [key: string]: string }) {
-    this._labels = value;
-  }
-  public resetLabels() {
-    this._labels = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get labelsInput() {
-    return this._labels;
   }
 
   // project - computed: true, optional: true, required: false
@@ -1217,12 +910,6 @@ export class GkeHubFleet extends cdktf.TerraformResource {
   private _state = new GkeHubFleetStateList(this, "state", false);
   public get state() {
     return this._state;
-  }
-
-  // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
-  public get terraformLabels() {
-    return this._terraformLabels;
   }
 
   // uid - computed: true, optional: false, required: false
@@ -1276,7 +963,6 @@ export class GkeHubFleet extends cdktf.TerraformResource {
       deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
       display_name: cdktf.stringToTerraform(this._displayName),
       id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       project: cdktf.stringToTerraform(this._project),
       default_cluster_config: gkeHubFleetDefaultClusterConfigToTerraform(this._defaultClusterConfig.internalValue),
       timeouts: gkeHubFleetTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1302,12 +988,6 @@ export class GkeHubFleet extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
-        isBlock: false,
-        type: "map",
-        storageClassType: "stringMap",
       },
       project: {
         value: cdktf.stringToHclTerraform(this._project),

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,17 +16,17 @@ export interface NetappBackupConfig extends cdktf.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#deletion_policy NetappBackup#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#deletion_policy NetappBackup#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#description NetappBackup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#description NetappBackup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#id NetappBackup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#id NetappBackup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,23 +39,23 @@ export interface NetappBackupConfig extends cdktf.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#labels NetappBackup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#labels NetappBackup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Location of the backup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#location NetappBackup#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#location NetappBackup#location}
   */
   readonly location: string;
   /**
   * The resource name of the backup. Needs to be unique per location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#name NetappBackup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#name NetappBackup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#project NetappBackup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#project NetappBackup#project}
   */
   readonly project?: string;
   /**
@@ -63,31 +63,31 @@ export interface NetappBackupConfig extends cdktf.TerraformMetaArguments {
   * there will be a new snapshot taken to initiate the backup creation.
   * Format: 'projects/{{projectId}}/locations/{{location}}/volumes/{{volumename}}/snapshots/{{snapshotname}}''
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#source_snapshot NetappBackup#source_snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#source_snapshot NetappBackup#source_snapshot}
   */
   readonly sourceSnapshot?: string;
   /**
   * ID of volumes this backup belongs to. Format: 'projects/{{projects_id}}/locations/{{location}}/volumes/{{name}}''
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#source_volume NetappBackup#source_volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#source_volume NetappBackup#source_volume}
   */
   readonly sourceVolume?: string;
   /**
   * Name of the backup vault to store the backup in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#vault_name NetappBackup#vault_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#vault_name NetappBackup#vault_name}
   */
   readonly vaultName: string;
   /**
   * ontap_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#ontap_source NetappBackup#ontap_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#ontap_source NetappBackup#ontap_source}
   */
   readonly ontapSource?: NetappBackupOntapSource;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#timeouts NetappBackup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#timeouts NetappBackup#timeouts}
   */
   readonly timeouts?: NetappBackupTimeouts;
 }
@@ -95,20 +95,20 @@ export interface NetappBackupOntapSource {
   /**
   * The UUID of the ONTAP source snapshot.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#snapshot_uuid NetappBackup#snapshot_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#snapshot_uuid NetappBackup#snapshot_uuid}
   */
   readonly snapshotUuid?: string;
   /**
   * Name of the storage pool. This must be specified for creating backups for ONTAP mode volumes.
   * Format: 'projects/{{project}}/locations/{{location}}/storagePools/{{storage_pool_id}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#storage_pool NetappBackup#storage_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#storage_pool NetappBackup#storage_pool}
   */
   readonly storagePool: string;
   /**
   * The UUID of the ONTAP source volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#volume_uuid NetappBackup#volume_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#volume_uuid NetappBackup#volume_uuid}
   */
   readonly volumeUuid: string;
 }
@@ -244,15 +244,15 @@ export class NetappBackupOntapSourceOutputReference extends cdktf.ComplexObject 
 }
 export interface NetappBackupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#create NetappBackup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#create NetappBackup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#delete NetappBackup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#delete NetappBackup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#update NetappBackup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#update NetappBackup#update}
   */
   readonly update?: string;
 }
@@ -404,7 +404,7 @@ export class NetappBackupTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup google_netapp_backup}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup google_netapp_backup}
 */
 export class NetappBackup extends cdktf.TerraformResource {
 
@@ -420,7 +420,7 @@ export class NetappBackup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetappBackup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappBackup to import
-  * @param importFromId The id of the existing NetappBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetappBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappBackup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -432,7 +432,7 @@ export class NetappBackup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.3.0/docs/resources/netapp_backup google_netapp_backup} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup google_netapp_backup} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -443,8 +443,8 @@ export class NetappBackup extends cdktf.TerraformResource {
       terraformResourceType: 'google_netapp_backup',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.3.0',
-        providerVersionConstraint: '~> 8.3.0'
+        providerVersion: '7.46.1',
+        providerVersionConstraint: '~> 7.46.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
